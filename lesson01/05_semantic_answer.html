@@ -5,10 +5,10 @@
 <title>layout요소</title>
 </head>
 <body>
-
+  <!-- 큰 블록 먼저 만들기 -->
   <header>
     <h1>
-      사이트제목: 스파게티 하우스
+      스파게티 하우스
     </h1>
     <nav>
       <h2>네비게이션 메뉴</h2>
@@ -16,33 +16,34 @@
   </header>
 
   <main>
-    <h3>내용</h3>
+    <!-- <h3>내용</h3> -> main은 outline을 생성하지 않기에 필요하지 X -->
+    <!-- article 안에 section 포함! -->
       <article>
-        <h4>스파게티에 대해서 알아보기</h4>
-      </article>
+        <h3>스파게티에 대해서 알아보기</h3>
         <section>
-          <h5>스파게티의 역사</h5>
+          <h4>스파게티의 역사</h4>
         </section>
         <section>
-          <h5>스파게티의 유래</h5>
+          <h4>스파게티의 유래</h4>
         </section>
+      </article> 
       <article>
-        <h5>스파게티의 재료</h5>
-      </article>
+        <h3>스파게티의 재료</h3>
         <section>
-          <h5>면류</h5>
+          <h4>면류</h4>
         </section>
         <section>
-          <h5>채소류</h5>
+          <h4>채소류</h4>
         </section>
         <section>
-          <h5>육류</h5>
+          <h4>육류</h4>
         </section>
-      <article>
-        <h4>스파게티 고장</h4>
       </article>
       <article>
-        <h4>스파게티 추천 레스토랑</h4>
+        <h3>스파게티 고장</h3>
+      </article>
+      <article>
+        <h3>스파게티 추천 레스토랑</h3>
       </article>  
   </main>
 
