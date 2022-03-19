@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>링크</title>
+</head>
+
+<body>
+
+	<!--경로 target title-->
+	<h1>경로</h1>
+	<dl>
+		<dt>절대경로</dt>
+		<dd><a href="http://www.naver.com" target="_self">네이버</a></dd>
+		<dd><a href="http://www.naver.com" target="_blank" title="네이버 이동">네이버</a></dd>
+		<dt>상대경로</dt>
+		<dd><a href="./data/site01.html" target="_blank" title="사이트 이동">sample01</a></dd>
+	</dl>
+
+	<!-- 여러 화일링크-->
+	<h1>화일링크</h1>
+	<dl>
+		<!-- pdf : 브라우저 렌더링 O -> 로드 -->
+		<dt>화일연결</dt>
+		<dd><a href="./data/text.pdf" target="_blank">sample PDF화일</a></dd>
+		<!-- zip : 브라우저 렌더링 X -> 다운로드 -->
+		<dt>zip화일 연결</dt>
+		<dd><a href="./data/text.zip">sample ZIP화일</a></dd>
+		<!-- jpg : 브라우저 렌더링 O -> 로드 -->
+		<dt>img화일 연결</dt>
+		<dd><a href="./data/pic_09.jpg" target="_blank">sample 이미지화일</a></dd>
+	</dl>
+
+	<!--미디어링크-->
+	<h1>화일링크</h1>
+	<dl>
+		<dt>메일링크</dt>
+		<dd><a href="mailto:aaa@naver.com">aaa&#64;naver.com</a></dd>
+		<dd><a href="mailto:aaa&#64;naver.com">aaa&#64;naver.com</a></dd>
+
+		<dt>전화번호 링크</dt>
+		<!-- 하이픈(-) 포함하는 것이 유리 -->
+		<dd><a href="tel:010-9999-9999">010-9999-9999</a></dd>
+		<dd><a href="tel:+1123-9999-9999">010-9999-9999</a></dd>
+	</dl>
+
+</body>
+
+</html>
