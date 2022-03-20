@@ -3,19 +3,27 @@
 <head>
 <meta charset="utf-8">
 <title>video</title>
+<style>
+  @import url('./css/smaple02.css');
+</style>
 </head>
 
 <body>
 <!--기본형태-->
-<h1>기본형태</h1>
+<h1 id="main">기본형태</h1>
 <p>
-
+<video src="./video/puppy.mp4" autoplay controls loop muted preload="auto" width="500"></video>
 </p>
 
 <!--source사용-->
 <h1>기본형태2</h1>
 <p>
-
+<video controls muted preload="metadata" poster="./img/puppy.jpg">
+  <!-- 위에서부터 아래로 탐색하면서 브라우저가 재생할 수 있는 비디오 파일 선택 -->
+  <source src="./video/puppy.mp4" type="video/mp4">
+  <source src="./video/puppy.webm" type="video/webm">
+  <track src="./video/video-subtitles-en.vtt" kind="subtitles" label="영어" srclang="en">
+</video>
 </p>
 </body>
 </html>

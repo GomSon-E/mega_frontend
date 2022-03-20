@@ -1,0 +1,7 @@
+h1{
+  background-color: yellow;
+}
+/* h1.no01 : 우선권이 더 높다 */
+.no01{
+  color: red;
+}

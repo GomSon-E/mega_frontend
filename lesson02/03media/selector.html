@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>selector</title>
+  <style>
+    ul>li#main+li{
+      background-color: orange;
+    }
+    ul>li#main~li{
+      color: gray;
+      font-size: 45px;
+    }
+  </style>
+</head>
+<body>
+  <!-- div>ul>li*5 -->
+  <div>
+    <ul>
+      <li>smaple01</li>
+      <li id="main">smaple02</li>
+      <li>smaple03</li>
+      <li>smaple04</li>
+      <li>smaple05</li>
+    </ul>
+  </div>
+</body>
+</html>

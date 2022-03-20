@@ -5,6 +5,32 @@
 	<title>imagemap</title>
 </head>
 <body>
-<p><img src="" alt="세부설명"></p>
+<p>
+	<img src="./pic/map.gif" alt="세부설명" usemap="#box">
+	<map name="box">
+		<area 
+			shape="rect" 
+			coords="53, 87, 162, 182" href="http://www.naver.com" target="_blank"  title="네이버이동" alt="네이버이동">
+		<area shape="circle" coords="273, 132, 42" href="http://www.daum.net" target="_blank" title="다음이동" alt="다음이동">
+	</map>
+</p>
+<!-- img map 유틸 사용 -->
+<p>
+	<img src="./pic/map.gif" alt="이미지맵 유틸이용" usemap="#imgdata">
+	<map name="imgdata">
+    <area target="_blank" alt="네이버 이동" title="네이버 이동" href="http://www.naver.com" coords="53,86,166,181" shape="rect">
+    <area target="_blank" alt="다음 이동" title="다음 이동" href="http://www.daum.net" coords="273,133,44" shape="circle">
+    <area target="_blank" alt="네이트 이동" title="네이트 이동" href="http://www.nate.com" coords="419,86,366,111,400,173,474,172,473,141" shape="poly">
+</map>
+</p>
+<!-- img map 유틸 사용 2 -->
+<p>
+	<img src="./pic/map_util.png" alt="이미지맵 유틸이용 2" usemap="#imgdata2">
+	<map name="imgdata2">
+    <area target="_blank" alt="네이버 이동" title="네이버 이동" href="http://www.naver.com" coords="51,40,129,115" shape="rect">
+    <area target="_blank" alt="네이트 이동" title="네이트 이동" href="http://www.nate.com" coords="208,189,259,135,312,188,260,244" shape="poly">
+    <area target="_blank" alt="다음 이동" title="다음 이동" href="http://www.daum.net" coords="122,324,54" shape="circle">
+</map>
+</p>
 </body>
 </html>

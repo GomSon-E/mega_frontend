@@ -3,17 +3,21 @@
 <head>
 <meta charset="utf-8">
 <title>audio</title>
+<link rel="stylesheet" href="./css/sample01.css">
 </head>
 <body>
 <!--기본형-->
-<h1>기본</h1>
+<h1 class="no01">기본</h1>
 <p>
-
+<audio src="./audio/interview.mp3" controls loop preload="metadata"></audio>
 </p>
 <!--source사용-->
 <h1>기본2</h1>
 <p>
-
+<audio controls preload="metadata">
+  <source src="./audio/test-audio.mp3" type="audio/mp3">
+  <source src="./audio/test-audio.ogg" type="audio/ogg">
+</audio>
 </p>
 </body>
 </html>
