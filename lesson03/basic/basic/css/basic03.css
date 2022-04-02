@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/* CSS Document */
+body{background:url(../images/alice.gif);}
+div{width:426px; padding:10px; margin:100px auto; border:3px solid #30C; overflow:hidden;}
+section{width:120px; height:120px; line-height:120px; text-align:center; color:#000; font-weight:800; float:left; border:1px solid #000;margin:10px;}
+
+/*클래스 color01-> 배경칼라 키워드:coral*/
+.color01 {
+  background-color: coral;
+}
+
+/*클래스 color02-> 배경칼라 투명:transparent*/
+/* 배경 : 투명 Default / Font Color : #000 / a : blue */
+.color02 {
+  background-color: transparent;
+}
+
+/*클래스 color03-> 배경칼라rgb16진수:#009999*/
+.color03 {
+  background-color: #009999;
+  background-color: #099;
+}
+
+/*클래스 color04-> 배경칼라rgb십진수:red:204, green:153, blue:0*/
+.color04 {
+  background-color: rgb(204, 153, 0);
+}
+
+/*클래스 color05-> 배경칼라rgb백문율:red:90%, green:20%, blue:80%*/
+.color05 {
+  background-color: rgb(90%, 20%, 80%);
+}
+
+/*클래스 color06-> 배경칼라 hsl:색상:220도,채도:60%,명도50%*/
+.color06 {
+  background-color: hsl(220deg, 60%, 50%);
+}
+
+/*클래스 color07-> 배경칼라 rgba:red:204, green:0 blue:0, 투명도:20%*/
+.color07 {
+  background-color: rgba(204, 0, 0, 0.2);
+  /* 크롬 업데이트 버전 */
+  background-color: rgba(204 0 0 / 20%);
+}
+
+/*클래스 color08-> 배경칼라 hsla:색상:180도,채도:100%,명도40%, 투명도:20%*/
+.color08 {
+  background-color: hsla(180deg 100%, 40%, 0.2);
+  /* 크롬 업데이트 버전 */
+  background-color: hsla(180deg 100% 40% / 20%);
+}

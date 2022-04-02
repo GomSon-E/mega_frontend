@@ -1,0 +1,37 @@
+@charset "utf-8";
+/* CSS Document */
+
+p{width:500px; margin:20px auto 25px;
+	background-color:#FC0;}
+
+/* 클래스 text01 첫줄 들여쓰기 100px*/
+p.text01{
+	text-indent: 100px;
+}
+
+/* 클래스 text02 첫줄 들여쓰기 -100px*/
+p.text02{
+	text-indent: -100px;
+}
+
+/* 클래스 text03 첫줄 들여쓰기 50%*/
+p.text03{
+	text-indent: 50%;
+}
+
+/* inline 요소는 text-indent 안됨 */
+span{	
+	text-indent: 200px;
+	background-color: pink;
+	/* 성격 변경 : display */
+	display: block;
+}
+
+/* 콘텐트 우주 보내기 방법
+	 텍스트 기반 콘텐츠는 보이지 않고 요소만 남김
+	 요소 자리를 지키고는 있다
+*/
+div {
+	text-indent: -9999999px;
+	background-color: green;
+}

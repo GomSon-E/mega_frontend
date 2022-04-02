@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<title>input 요소</title>
+	<style>
+		section {
+			width: 800px;
+			margin: 0 auto;
+		}
+
+		section>h1 {
+			text-align: center;
+			margin-bottom: 20px
+		}
+
+		fieldset {
+			margin-bottom: 25px;
+		}
+
+		legend {
+			color: #09F;
+			font-size: 1.5em;
+			font-weight: 900;
+		}
+	</style>
+</head>
+
+<body>
+	<section>
+		<h1>새로운 input Type </h1>
+		<form>
+			<fieldset>
+				<legend>Text 변형</legend>
+				<!-- text -->
+				<p>
+					<label for="userID">아이디</label>
+					<input id="userId" >
+					<span>12자 이내로 해 주세요</span>
+				</p>
+				<p>
+					<label for="userPw">패스워드</label>
+					<input>
+					<span>최소 6글자 이내로 해 주세요.</span>
+				</p>
+				<!--search-->
+				<p>
+					<label for="userSearch">검색</label>
+					<input>
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>개인정보</legend>
+				<!--tel-->
+				<p>
+					<label for="userTel"> 전화번호1</label>
+					<input ></p>
+				<!--tel 2-->
+				<p>
+					<label for="userTel2">전화번호2</label>
+					<input ></p>
+				<!--url-->
+				<p>
+					<label for="userUrl"> 웹사이트주소</label>
+					<input ></p>
+				<!--url:2-->
+				<p>
+					<label for="userUrl2">웹사이트주소2</label>
+					<input >	</p>
+				<!--email-->
+				<p>
+					<label for="userEmail"> 이메일</label>
+					<input >	</p>
+			</fieldset>
+			<fieldset>
+				<legend>날짜</legend>
+				<!--date-->
+				<p>
+					<label for="userDate">예약가능일</label>
+					<input >
+				</p>
+				<!--month-->
+				<p>
+					<label for="userMonth">예약 가능달</label>
+					<input >
+				</p>
+				<!--week-->
+				<p>
+					<label for="userWeek">예약가능주</label>
+					<input>
+				</p>
+				<!--time-->
+				<p>
+					<label for="userTIme">예약 가능시간</label>
+					<input>
+				</p>
+
+				<!--datetime-local: YYYY-MM-DDTtt:mm-->
+				<p>
+					<label for="userLocal">지역시간대</label>
+					<input >
+				</p>
+			</fieldset>
+
+			<fieldset>
+				<legend>숫자</legend>
+				<!--number-->
+				<p>
+					<label for="userAge">연령</label>
+					<input>
+				</p>
+				<!--range-->
+				<p>
+					<label for="userRange">만족도</label>
+					<input>
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>선택하기</legend>
+				<!-- radio -->
+				<p>
+					<label>남<input></label>
+					<label>여<input></label>
+				</p>
+				<!-- checkbox -->
+				<p>
+					<label><input>선택1</label>
+					<label><input>선택2</label>
+					<label><input>선택3</label>
+					<label><input>선택4</label>
+				</p>
+			</fieldset>
+
+			<fieldset>
+				<legend>기타</legend>
+				<!--color-->
+				<p>
+					<label for="userColor">선택칼라</label>
+					<input>
+				</p>
+				<!-- 업로드 -->
+				<p>
+					<label for="userPhoto">사진업로드</label>
+					<input>
+				</p>
+				<!-- 안보이는 폼의 컨트롤 요소 -->
+				<p>
+					<label for="userHidden">안보이는 컨트롤요소</label>
+					<input>
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend>속성사용하기</legend>
+				<p></p>
+			</fieldset>
+			<fieldset>
+				<legend>버튼</legend>
+				<!-- 전송 취소 버튼 -->
+				<p><input>
+						<input>
+				</p>
+				<!-- 기타버튼 -->
+				<p>
+					<input >
+					<input>
+				</p>
+			</fieldset>
+		</form>
+	</section>
+</body>
+
+</html>

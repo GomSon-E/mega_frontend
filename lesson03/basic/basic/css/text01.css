@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+
+p{width:500px; margin:20px auto 25px;
+	background-color:#FC0;}
+
+/* 클래스 text01 첫줄 들여쓰기 100px*/
+
+/* 클래스 text02 첫줄 들여쓰기 -100px*/
+
+/* 클래스 text03 첫줄 들여쓰기 50%*/

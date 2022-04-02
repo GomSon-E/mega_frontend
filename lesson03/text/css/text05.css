@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* 클래스 space01  코딩 모양 그대로 나타내기*/
+/* -> pre요소 사용 */
+.space01 {
+  white-space: pre;
+}
+
+/* 클래스 space02 nowrap */
+.space02 {
+  white-space: nowrap;
+}

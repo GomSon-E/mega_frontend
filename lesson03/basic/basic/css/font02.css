@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* .ect  Arial, Helvetica체, 사이즈는 20px로 설정*/
+.ect {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+/*행간만들기*/
+
+/* .font01  여백 30px : 15 + 20 (Font Size) + 15 */
+.font01{
+  line-height: 50px;
+}
+
+/* .font02 140%-> 실수 */
+.font02{
+  line-height: 1.4;
+}
+
+
+/*weight하기*/
+
+/*. weigth01 폰트 굵기를 키워드로 가장 굵게*/
+.weigth01 {
+  font-weight: bolder;
+}
+
+/*. weigth02 폰트 굵기를 키워드로 가장 얇게*/
+.weigth02 {
+  font-weight: lighter;
+}
+
+/*. weigth03 폰트 굵기를 실수로 가장 얇게 */
+.weight03 {
+  font-weight: 100;
+}
+
+/*. weigth04 폰트 굵기를 실수로 조금 두껍게 */
+.weight04 {
+  font-weight: 600;
+}
+
+/*style만들기*/
+/* .style01 글자체 italic*/
+.style01 {
+  font-style: italic;
+}
+
+/* .style02 글자체 oblique*/
+.style02 {
+  font-style: oblique;
+}
+
+/* .style03 글자체 정자체 */
+.style03 {
+  font-style: normal;
+}

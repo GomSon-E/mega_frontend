@@ -1,0 +1,63 @@
+@charset "utf-8";
+p{margin:0; padding:0;
+	margin-bottom:25px;}
+.box{
+	width:500px;
+	margin-bottom:25px;
+	border:1px solid #666;}
+.box01{
+	font-size:35px;
+}
+.box>span{font-size:35px;}
+.box>small{font-size:10px;}
+
+/* vertical-align는 처음 만나는 인라인 요소에 써야 적용됨 */
+
+/*클래스 vertical01 세로 정렬 bottom : 디폴트 값이라 아무런 변화 없음 */
+.vertical01>img{
+	vertical-align: bottom;
+}
+
+/*클래스 vertical02 세로 정렬 top */
+.vertical02>img{
+	vertical-align: top;
+}
+
+/*클래스 vertical03 세로 정렬 middle */
+.vertical03>img{
+	vertical-align: middle;
+}
+
+/*클래스 vertical04 세로 정렬 top */
+.vertical04>span{
+	vertical-align: top;
+}
+
+/* label : 인라인 / textarea : 인라인 */
+p>label{
+	vertical-align: top;
+}
+
+/*클래스 deco01 윗 줄 만들기 */
+.deco01{
+	text-decoration: overline;
+}
+
+/*클래스 deco02 아래 줄 만들기 */
+.deco02{
+	text-decoration: underline;
+}
+
+/*클래스 deco03 가운데 줄 만들기 */
+.deco03{
+	text-decoration: line-through;
+}
+
+/*클래스 deco04의 자식 a 아래줄 없애기 */
+/* 클래스 deco04의 text decoration = none / color = black 
+	 -> deco04에 아무리 해봤자 바뀌는 것 X*/
+/* a의 text decoration = underline / color = blue */
+.deco04>a{
+	text-decoration: none;
+	color: green;
+}

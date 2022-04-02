@@ -1,0 +1,14 @@
+/* convert하며 생길 인코딩 문제를 방지 */
+@charset "utf-8";
+
+table {
+  width: 500px;
+  height: 300px;
+  border: 1px solid #000;
+  /* table과 th, td 사이의 간격 조정 */
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #000;
+}

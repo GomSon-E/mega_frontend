@@ -1,0 +1,79 @@
+@charset "utf-8";
+/* CSS Document */
+p.align{width:300px;
+		margin:20px auto 25px;
+		background-color:#FC0;}
+
+
+/*클래스 align01 왼쪽정렬 */
+.align01 {
+	text-align: left;
+}
+
+/*클래스 align02 오른쪽정렬 */
+.align02{
+	text-align: right;
+}
+
+/*클래스 align03 중앙정렬 */
+.align03{
+	text-align: center;
+}
+
+/*클래스 align04 양측정렬 */
+.align04{
+	text-align: justify;
+}
+
+/*클래스 align05 이미지 */
+/* img는 인라인 요소이므로 적용 X */
+/* img{
+	text-align: center;
+} */
+.align05{
+	text-align: center;
+}
+
+/*클래스 align06 inline요소 */
+/* span : 인라인 -> 가로크기 = 콘텐츠 크기 */
+span{
+	background-color: green;
+}
+.align06{
+	text-align: center;
+}
+
+/* 요소의 성격 : display */
+ul{
+	width: 500px;
+	background-color: pink;
+	text-align: center;
+}
+
+
+ul>li{
+	display: inline;
+	/* 이제 인라인 요소가 되었으므로 text-align이 적용되지 않는다 -> block 요소에 넣어줘야 함 */
+	/* text-align: center; */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

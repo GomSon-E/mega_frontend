@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* CSS Document */
+/* id 선택하기:아이디 set01 -> clor red */
+#set01 {
+  color: red;
+}
+
+/* class선택하기 : 클래스drink -> color yellow */
+.drink {
+  color: yellow;
+}
+
+/* 나중에 들어간 게 이김 */
+/* 다중클래스 선택하기  클래스 special -> color:green */
+.special {
+  color: green;
+}
+
+/*  */
+#box01>li {
+  background-color: pink;
+}
+
+/*  */
+#set02+ul{
+  background-color: blue;
+}
+
+/*  */
+#set02~ul{
+  border: 3px solid rgb(255, 0, 0);
+}
+
+/* 잘못된 예시 : 요소 간의 관계를 잘 보기 */
+/* 자식요소 선택하기 아이디 set02의 자식ul -> 배경 pink*/
+#set02 > ul {
+  background-color: #ffc0cb;
+}
+
+/*  */
+h1, h2{
+  border: 4px solid orange;
+}

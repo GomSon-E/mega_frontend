@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+/*#font01" "Times New Roman", Times */
+#font01{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+
+/*#font02" 나눔고딕 */
+#font02 {
+  font-family: '나눔고딕', 'Nanum Gothic', sans-serif;
+  font-size: 30px;
+}
+
+/* .size  Arial, Helvetica체로 설정*/
+.size {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* .font_01 글자크기25px */
+.font_01 {
+ font-size: 25px;
+}
+
+/* .font_02 글자크기75% : 부모인 body를 기준으로*/
+.font_02 {
+  font-size: 75%;
+}
+
+/* .font_03 글자크기1.5em : body의 16px의 1.5em */
+.font_03 {
+  font-size: 1.5em;
+}
+
+/* .font_04 글자크기 키워즈로 아주 작게 */
+.font_04 {
+  font-size: xx-small;
+}
+
+/* .font_05 글자크기 키워드로 조금 크게 */
+.font_05 {
+  font-size: x-large;
+}
+
+/* .font_06  글자크기 35px->em : 35 / 16 */
+.font_06 {
+  font-size: 2.1875em;
+}
+
