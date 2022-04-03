@@ -8,35 +8,6 @@
 <body>
 <h1>select</h1>
 
-<!--기본 목록상자
-연령:
-10대
-20대
-30대
-40대
-50대
-60대
-70대
-80대
-90대
-연락처정보:
-010-234-5678
-010-345-6789
-010-456-3456
-010-345-6765
-010-567-2345
-그룹목록상자
-서울시
-강남구
-동대문구
-송파구
-성동구
-경기도
-과천시
-광주시
-부천시
-성남시
--->
 <form action="#" method="post">
   <fieldset>
     <legend>선택하기 기본형</legend>
@@ -55,6 +26,21 @@
     <legend>그룹만들기</legend>
     <p>
       <label for="userAddress">주소</label>
+      <select name="userAddress" id="userAddress">
+        <optgroup label="서울시">
+          <option value="강남구">강남구</option>
+          <option value="동대문구">동대문구</option>
+          <option value="송파구">송파구</option>
+          <option value="성동구">성동구</option>
+        </optgroup>
+
+        <optgroup label="경기도">
+          <option value="과천시">과천시</option>
+          <option value="광주시">광주시</option>
+          <option value="부천시">부천시</option>
+          <option value="성남시">성남시</option>
+        </optgroup>
+      </select>
 
     </p>
   </fieldset>
@@ -64,9 +50,37 @@
     <!--list:datalist-->
     <p>
       <label for="userPatht">방문경로선택하기</label>
-
+      <input type="text" id="userPath" list="str">
+      <datalist id="str">
+        <option>인터넷</option>
+        <option>잡지</option>
+        <option>신문</option>
+        <option>기타</option>
+      </datalist>
+      <!-- 숨겨놨다가 조건이 맞을 때 보여주는 용도로 사용됨 -->
+      <input type="text" hidden>
     </p>
   </fieldset>
 </form>
 </body>
 </html>
+
+<!--기본 목록상자
+연령:
+10대
+20대
+30대
+40대
+50대
+60대
+70대
+80대
+90대
+연락처정보:
+010-234-5678
+010-345-6789
+010-456-3456
+010-345-6765
+010-567-2345
+-->
+

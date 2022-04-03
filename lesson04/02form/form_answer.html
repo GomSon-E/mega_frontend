@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입</title>
+</head>
+<body>
+  <section>
+    <h1>회원가입</h1> 
+    <form action="#" method="post">
+      <fieldset>
+        <legend>회원가입양식</legend>
+        <dl>
+          <dt>
+            <label for="userId">아이디</label>
+          </dt>
+          <dd>
+            <input type="text" id="userId" maxlength="12" required autofocus>
+            <span>(아이디는 12자 이내로 입력하세요.)</span>
+            <input type="button" value="아이디중복확인">
+          </dd>
+          <dt>
+            <label for="userPw">비밀번호</label>
+          </dt>
+          <dd>
+            <input type="password" id="userPw" required>
+          </dd>
+          <dt>
+            <label for="userInfo">자기소개</label>
+          </dt>
+          <dd>
+            <textarea id="userInfo" cols="70" rows="5" placeholder="300자 이내로 작성해주세요."></textarea>
+          </dd>
+          <dt>성별</dt>
+          <dd>
+            <label><input type="radio" id="men" checked name="people">남</label>
+            <label><input type="radio" id="women" name="people">여</label>
+          </dd>
+          <!-- 요즘의 이메일 -->
+          <dt>
+            <label for="userEmail">이메일주소 (현 버전)</label>
+          </dt>
+          <dd>
+            <input type="email" id="userEmail">
+          </dd>
+          <!-- 예전 이메일 -->
+          <dt>
+            <label for="userEmail2">이메일주소 (구 버전)</label>
+          </dt>
+          <dd>
+            <input type="text" id="userEmail2">
+            &#64;
+            <input type="text">
+            <select>
+              <option value="naver">naver.com</option>
+              <option value="daum">daum.net</option>
+              <option value="gmail">gmail.com</option>
+            </select>
+          </dd>
+          <dt>
+            이메일수신허용
+          </dt>
+          <dd>
+            <label><input type="radio" checked name="yes">허용</label>
+            <label><input type="radio" name="yes">거부</label>
+          </dd>
+          <!-- select 방법 -->
+          <dt>
+            <label for="job">직업 (select 방법)</label>
+          </dt>
+          <dd>
+            <select id="job">
+              <option value="#">선택</option>
+              <option value="주부">주부</option>
+              <option value="회사원">회사원</option>
+              <option value="학생">학생</option>
+              <option value="기타">기타</option>
+            </select>
+          </dd>
+          <!-- datalist 방법 -->
+          <dt>
+            <label for="job2">직업 (datalist 방법)</label>
+          </dt>
+          <dd>
+            <input type="text" id="job2" list="str">
+            <datalist id="str">
+              <!-- 여기는 선택이 들어가면 안됨 / 기타도 굳이 필요없음 -->
+              <option>주부</option>
+              <option>회사원</option>
+              <option>학생</option>
+            </datalist>
+          </dd>
+          <dt>
+            관심사
+          </dt>
+          <dd>
+            <label><input type="checkbox">연예인</label>
+            <label><input type="checkbox">요리</label>
+            <label><input type="checkbox" checked>다이어트</label>
+            <label><input type="checkbox">게임</label>
+          </dd>
+          <dt>
+            <label for="userPhoto">사진업로드</label>
+          </dt>
+          <dd>
+            <input type="file" id="userPhoto">
+          </dd>
+        </dl>
+        <p>
+          <input type="submit" value="정보저장">
+          <input type="reset" value="다시쓰기">
+        </p>
+      </fieldset>
+    </form>
+  </section>
+</body>
+</html>
