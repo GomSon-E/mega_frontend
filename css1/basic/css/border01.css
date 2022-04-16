@@ -1,0 +1,78 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*
+p요소에 가로: 150px, 세로: 150px
+border의 굵기: 5px
+border의 스타일:실선
+border의 칼라:orange
+설정하기
+*/
+p {
+    width: 150px;
+    height: 150px;
+    border: 5px solid orange;
+}
+
+/*p의 클래스 box_01에 보더의 스타일 dotted설정*/
+p.box_01 {
+    border-style: dotted;
+}
+
+/*p의 클래스 box_02에 보더의 스타일 dashed설정*/
+p.box_02 {
+    border-style: dashed;
+}
+
+/*p의 클래스 box_03에 보더의 스타일 solid설정*/
+p.box_03 {
+    border-style: solid;
+}
+
+/*p의 클래스 box_04에 보더의 스타일 double설정*/
+p.box_04 {
+    /* 충분한 border-width가 필요 : 최소 5px 이상 */
+    border-style: double;
+}
+
+/*p의 클래스 box_05에 보더의 스타일 groove설정*/
+p.box_05 {
+    border-style: groove;
+}
+
+/*p의 클래스 box_06에 보더의 스타일 ridge설정*/
+p.box_06 {
+    border-style: ridge;
+}
+
+/*p의 클래스 box_07에 보더의 스타일 inset설정*/
+p.box_07 {
+    border-style: inset;
+}
+
+/*p의 클래스 box_08에 보더의 스타일 outset설정*/
+p.box_08 {
+    border-style: outset;
+}
+
+/*p의 클래스 box_09에 보더의 칼라 top:red, bottom:green, left:#666 */
+p.box_09 {
+    border-top-color: red;
+    border-bottom-color: green;
+    border-left-color: #666;
+
+    border-bottom-width: 30px;
+    border-left-style: dotted;
+}
+
+/*div의 보더 오른쪽 없애기*/
+div{width:100px; height:100px;
+    border-width:10px;
+    border-style:solid;
+    border-color:red;
+
+    /* 두 가지 방법이 있음 */
+    border-right-style: none;
+    border-right-width: 0;
+}
+    

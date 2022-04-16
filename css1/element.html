@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>BLOCK 과 Inline요소의 성격과 크기</title>
+<style>
+    .box01 {
+        background-color: pink;
+        height: 50px;
+    }
+    .box02 {
+        /* Default - width: auto; */
+        width: 500px;
+        background-color: #666;
+        padding: 50px;
+        border: 10px solid #000;
+    }
+
+    i {
+        /* inline 요소는 크기를 사용자가 마음대로 제어할 수 없다 */
+        /* width: 400px; */
+        /* -> 1. padding이나 border 조정 */
+        background-color: yellow;
+        padding: 0 100px;
+    }
+    em {
+        /* -> 2. 성격 변경 */
+        background-color: pink;
+        display: inline-block;
+        width: 300px;        
+    }
+</style>
+</head>
+<body>
+    <h1> block요소의 성격과 auto크기 </h1>
+<p class="box01"></p>
+<p class="box02">loeLorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur rem praesentium, eum cum reiciendis voluptatibus laudantium eligendi nisi officia eos molestias, impedit quas unde debitis, beatae voluptates pariatur. Deserunt, aut?loeLorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+<ul>
+    <li>list01</li>
+    <li>list02</li>
+    <li>list03</li>
+    <li>list04</li>
+    <li>list05</li>
+    </ul>
+
+    <h1>inline요소의 성격과 auto크기</h1>
+<em>smaple01</em><i>smaple02</i><a href="#">link01</a>
+</body>
+</html>

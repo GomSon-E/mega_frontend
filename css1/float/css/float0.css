@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+ 
+div#all{
+	width:600px;
+	height:500px;
+	background-color:#eee;
+}
+
+p.box_01{
+	width:150px;height:150px; background-color:red;
+
+	float: left;
+}			
+
+p.box_02{
+	width:150px;height:150px; background-color:green;
+
+	float: right;
+}		
+
+p.box_03 {
+	clear: both;
+}
+				

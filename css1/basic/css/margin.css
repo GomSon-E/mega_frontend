@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+
+p {	
+	height: 250px;
+	width: 250px;
+}
+
+.box_01 {
+	background-color: #990;
+	margin-bottom: 100px;
+}
+
+.box_02 {
+	background-color: #C00;
+	/* margin-top: 50px;
+	margin-bottom: 150px; */
+	margin: 50px 0 150px
+}
+
+.box_03 {
+	background-color: #F90;
+	margin: 0 auto;
+}

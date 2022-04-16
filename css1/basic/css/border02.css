@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+/*p요소에 가로:150px; 세로:100px;
+보더 단축형으로 굵기 2px 스타일 dotted 칼라 red설정하기
+*/
+p {
+    width: 150px;
+    height: 100px;
+    border: 2px dotted red;
+}
+
+/*클래스box_a 에 
+border의 굵기가 각각 
+    top-> 20px 
+    right-> 10px 
+    bottom-> 3px 
+    left-> 12px 로 설정하고
+border의 칼라가 
+    top-> red 
+    right,left-> blue 
+    bottom-> pink 
+로 설정하기
+*/
+.box_a {
+    border-width: 20px 10px 3px 12px;
+    border-color: red blue pink;
+}
+
+/*클래스box_b에 
+border의 스타일 
+    top, bottom ->dotted
+    left, right:double
+border의  right 굵기를 10px
+border의 칼라
+    top-> pink 
+    right-> green 
+    bottom-> skyblue 
+    left-> yellow 설정한다
+*/
+.box_b {
+    border-style: dotted double;
+    border-right-width: 10px;
+    border-color: pink green skyblue yellow;
+}
+
+/* box_01 */
+.box_01 {
+    border-top-left-radius: 20px 10px;
+    border-bottom-right-radius: 50px 25px;
+
+    /* border-top-right-radius: 50px 50px; */
+    border-top-right-radius: 50px;
+}
+
+/* box_02 */
+.box_02 {
+    /* border-radius: x / y; */
+    /* border-radius: x1 x2 x3 x4 / y1 y2 y3 y4 */
+    border-radius: 20px 10px 40px 25px / 50px 20px 10px 15px;
+}
+
+/* 원 만들기 */
+div.box {
+    width: 120px;
+    height: 120px;
+    background-color: green;
+    text-align: center;
+    line-height: 120px;
+
+    border-radius: 50%;
+    /* border-radius: 100%; -> 아무리 크게 해도 최대 50%까지 반영*/
+}
+
+div.data {
+    width: 120px;
+    height: 180px;
+    background-color: pink;
+    border-radius: 50%;
+}
+
+
