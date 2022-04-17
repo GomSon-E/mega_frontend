@@ -1,1 +1,58 @@
 @charset "utf-8";
+
+div#wrap {
+  margin: 50px auto;
+
+  background-color: rgb(250, 206, 62);
+  /*  */box-sizing: border-box;/*  */
+  width: 600px;
+  padding: 20px;
+  font-family: '나눔명조', '바탕', '궁서', serif;
+}
+
+div#wrap>header {
+  background-color: white;
+  color: rgb(247, 3, 20);
+  margin-bottom: 20px;
+  text-align: center;
+  /* Font-weight는 상속이 안됨 */
+  /* font: bold 24px/34px '나눔명조', '바탕', '궁서', serif; */
+}
+
+div#wrap>header>h1 {
+  font: bold 24px/34px '나눔명조', '바탕', '궁서', serif;
+}
+
+div#wrap>div#contents {
+  background-color: rgb(154, 207, 27);
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+/* 공통적인 것 먼저 처리하고 */
+div#contents>section {
+  width: 270px;
+  box-sizing: border-box;
+  padding: 5px;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: justify;
+}
+
+/* 각각의 다른 점 뒤에 처리 */
+div#contents>section.left {
+  background-color: rgb(24, 130, 10);
+  float: left;
+}
+div#contents>section.right {
+  background-color: rgb(160, 40, 44);
+  float: right;
+}
+
+div#wrap>footer {
+  clear: both;
+  background-color: rgb(128, 128, 128);
+  text-align: center;
+  line-height: 38px;
+  font-size: 15px;
+}

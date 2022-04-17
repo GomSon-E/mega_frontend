@@ -10,19 +10,54 @@ p.box01{background:red;}
 p.box02{background:yellow;}	
 p.box03{background:green;}	
 
-div#boxA>.box01{}
-div#boxA>.box02{}
-div#boxA>.box03{}
+div#boxA>.box01{
+	float: left;
+	margin-right: 100px;
+}
+div#boxA>.box02{
+	float: left;
+	margin-right: 50px;
+}
+div#boxA>.box03{
+	float: left;
+}
 
-div#boxB>.box01{}
-div#boxB>.box02{}
-div#boxB>.box03{}
+div#boxB>.box01{
+	float: left;
+	margin-left: 50px;
+}
+div#boxB>.box02{
+	float: right;
+	margin-right: 50px;
+}
+div#boxB>.box03{
+	float: right;
+	margin-right: 50px;
+}
 
-div#boxC>.box01{}
-div#boxC>.box02{}
-div#boxC>.box03{}
+div#boxC>.box01{
+	float: right;
+}
+div#boxC>.box02{
+	float: left;
+}
+div#boxC>.box03{
+	float: right;
+}
 
-div#boxD>.box01{}
-div#boxD>.box02{}
-div#boxD>.box03{}
+div#boxD {
+	/* 자식의 크기에 따라 height가 정해짐 */
+	height: auto;
+	/* 자식의 크기를 감지함 */
+	overflow: hidden;
+}
+div#boxD>.box01{
+	float: left;
+}
+div#boxD>.box02{
+	float: left;
+}
+div#boxD>.box03{
+	float: right;
+}
 
