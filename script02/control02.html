@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>if문</title>
+</head>
+<body>
+
+<!--
+//조건: 국어(class01) 수학(class02)  영어(class03):세 과목 모두 60점 이상 통과
+//참: '통과 되었습니다.'출력
+//거짓:'불합격 되었습니다.' 출력
+-->
+
+<script>
+  let class01 = prompt('국어 점수를 입력해주세요')
+  let class02 = prompt('수학 점수를 입력해주세요')
+  let class03 = prompt('영어 점수를 입력해주세요')
+
+  if (class01 >= 60 && class02 >= 60 && class03 >= 60) {
+    console.log('통과되었습니다')
+  } else {
+    console.log('불합격되었습니다')
+  }
+</script>
+
+</body>
+
+</html>

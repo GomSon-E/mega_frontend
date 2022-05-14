@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>switch문</title>
+</head>
+<body>
+<!--
+조건: 학년을 입력하세요.
+//1학년(1) ->'2층으로 가세요. '출력
+//2학년(2) ->'3층으로 가세요. '출력
+//3학년(3) ->'별관으로 가세요. '출력
+//기타       ->1층 안내실로 가세요. '출력
+-->
+
+<script>
+  let room = prompt('학년을 입력하세요', '1학년 : 1, 2학년 : 2, 3학년 : 3, 나머지 : 4')
+
+  switch (room) {
+    case '1' : 
+      // 여러 문장일 경우, {} 리터널로 묶어야 한다
+      {document.write('2층으로 가세요')
+      alert('지각하지 맙시다')}
+      break;
+    case '2' : 
+      document.write('3층으로 가세요')
+      break;
+    case '3' : 
+      document.write('별관으로 가세요')
+      break;
+    default : 
+      document.write('1층 안내실로 가세요')
+  }
+</script>
+
+</body>
+</html>
+
+
+
+
+
+

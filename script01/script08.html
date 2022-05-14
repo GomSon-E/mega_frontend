@@ -14,5 +14,37 @@
 4. 배틱 사용법
 -->
 
+<script>
+  // 1. 산술 vs 결합
+  console.log(3 + 4)
+  console.log(3 + 4 + 5)
+  console.log(3 + 5 + '5')
+  console.log('10' + 3 + 5)
+  console.log(3 + 5 + '10' + 3 + 5)
+
+  // 2. 연결 연산자
+  let sum = 20;
+  let str = '지리산'
+  let i = 11
+  console.log(sum, str) // 데이터형이 합쳐지지는 않음
+  console.log(sum + str) // 데이터형이 string으로 합쳐짐
+
+  console.log(3 + 5 , '5', 3 + 5)
+  document.write(3 + 5 , '5', 3 + 5)
+
+  // 3. 배틱 : 출력이 무조건 string 형
+  let sub = 30
+  let sum2 = '꽃'
+  console.log(`string ${5*3} 지리산`)
+  console.log(`설악산 ${sum2} : ${sub}`)
+  document.write(
+    `
+    <p> 
+      <img src="img/car${i}.jpg" alt="${sum2}">
+    </p>
+    `
+  )
+</script>
+
 </body>
 </html>

@@ -10,9 +10,18 @@
 <!--
 자료형변화
 문자 데이터를 숫자 데이터 형으로
-1. parseInt()
-2. Number()
+1. parseInt() -> 윈도우 객체
+2. Number() -> 객체 메소드
 -->
+
+<script>
+  let num = 123;
+  let str = '234';
+  console.log(num + str); // 123234
+  console.log(num + parseInt(str)) // 357
+  console.log(num + Number(str))   // 357
+
+</script>
 
 </body>
 </html>
