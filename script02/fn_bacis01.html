@@ -11,6 +11,33 @@
 
 </head>
 <body>
+<script>
+  // 매개변수, 인수 X
+  function line1 () {
+    for (let i = 0; i < 20; i ++) {
+      document.write('*')
+    }
+    document.write('end<br>')
+  }
 
+  line1()
+  line1()
+  line1()
+  line1()
+  
+  // 매개변수, 인수 O
+  function line2 (str) {
+    for (let i = 0; i < 20; i ++) {
+      document.write(str)
+    }
+    document.write('end<br>')
+  }
+
+  line2('*')
+  line2('@')
+  line2('%')
+  line2('!')
+
+</script>
 </body>
 </html>

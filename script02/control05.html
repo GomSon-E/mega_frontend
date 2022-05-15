@@ -18,31 +18,37 @@
 -->
 
 <script>
-  let day = prompt('요일을 입력하세요')
+  let day = prompt('요일을 입력하세요', '월요일:월, 화요일:화, 수요일:수, 목요일:목, 금요일:금')
 
   switch (day) {
     case '월' : {
-
+      alert('오늘의 보충 수업은 국사')
+      document.write('오늘의 수업은 102페이지 입니다.')
     }
     break
-    case '월' : {
-
+    case '화' : {
+      alert('오늘의 보충 수업은 수학')
+      document.write('오늘의 수업은 103페이지 입니다.')
     }
     break
-    case '월' : {
-
+    case '수' : {
+      alert('오늘의 보충 수업은 국어')
+      document.write('오늘의 수업은 104페이지 입니다.')
     }
     break
-    case '월' : {
-
+    case '목' : {
+      alert('오늘의 보충 수업은 과학')
+      document.write('오늘의 수업은 105페이지 입니다.')
     }
     break
-    case '월' : {
-
+    case '금' : {
+      alert('오늘의 보충 수업은 영어')
+      document.write('오늘의 수업은 106페이지 입니다.')
     }
-    break
+    break    
     default : {
-      
+      alert('오늘은 수업 없습니다.')
+      document.write('오늘의 수업은 107페이지 입니다.')
     }
   }
 </script>

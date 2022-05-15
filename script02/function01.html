@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>함수의 형식</title>
+</head>
+<body>
+  <script>
+    // 이름 있는 함수 : 함수 사용 위치 상관 없음
+    console.log(num(1));
+    function num(a) {
+      let result = 3 * a
+      // console.log('num:', result)
+      return result
+    }
+    console.log(num(10));
+
+    // 이름 없는 함수
+    // 이름 = {속성명 : function(){}} 형식과 비슷
+    const room = function(b) {
+      let result = 5 / b
+      console.log(result)
+    }
+    room(2);
+
+    // 함수식 : 세미콜론 중요! : 생략 불가능
+    // 함수식1
+    (function(a){
+      let result = 45 * a
+      console.log('함수식1:', result)
+    })(5);
+    // 함수식2
+    (function(){
+      let result = 45 * 3
+      console.log('함수식2:', result)
+    }());
+    // 함수식3 : 제일 많이 만나는 방법
+    const sub = (function(){
+      let result = 3 * 5;
+      return result
+    })()
+
+    console.log(sub)
+  </script>
+</body>
+</html>

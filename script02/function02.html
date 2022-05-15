@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>화살표 함수</title>
+</head>
+<body>
+  <script>
+    // 이름 없는 함수
+    const main = function() {
+      console.log('main')
+    }
+    main();
+
+    // 화살표 함수
+    // 1. 인수가 없을 때
+    const main1 = () => {
+      console.log('main1')
+    }
+    main1();
+
+    // 2. 인수가 하나일 때
+    const main2 = a => {
+      console.log(a)
+    }
+    main2('main2')
+
+    // 3. 인수가 여러 개일 때
+    const main3 = (a, b) => {
+      console.log(a + b)
+    }
+    main3('main','3')
+    // main3(5, 7)
+
+    // 4. 실행문이 하나일 때
+    const main4 = (a, b) => console.log(a + b)
+    main4('main', '4')
+
+    // 5. 실행문이 리턴 하나일 때
+    // 5-1. 리터널을 생략할 수 없음
+    const main5 = a => {return a*2;}
+    console.log(main5(5))
+    // 5-2. 리터널과 리턴을 모두 생략할 수 있음
+    const main6 = a => a*2
+    console.log(main6(6))
+    
+  </script>
+</body>
+</html>

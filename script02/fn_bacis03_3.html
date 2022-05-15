@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>onClick()</title>
+<script>
+
+</script>
+</head>
+<body>
+<!--
+버튼->click->ok함수 불러들이기
+버튼->click->no함수 불러들이기
+-->
+<button type="button" value="ok" id="btn01">OK</button>
+<button type="button" value="no" id="btn02">NO</button>
+
+<script>
+  const btn01 = document.querySelector('#btn01')
+  const btn02 = document.querySelector('#btn02')
+
+  // btn01.onclick = ok('YES')
+
+  btn01.onclick = function() {
+    ok('sample')
+  }
+
+  btn02.onclick = function() {
+    no('welcome')
+  }
+
+
+  function ok(str) {
+    console.log(str)
+  }
+  function no(str) {
+    console.log(str)
+  }
+</script>
+</body>
+</html> 

@@ -3,16 +3,27 @@
 <head>
 <meta charset="utf-8">
 <title>인수</title>
-<script>
-
-</script>
 </head>
 <body>
-<button type="button" value="무궁화">무궁화</button>
-<button type="button" value="장미" >장미</button>
-<button type="button" value="국화">국화</button>
-<!--버튼클릭->함수 order에 '무궁화'보내기
- 버튼클릭->함수 order에 '장미'보내기 
-버튼클릭->함수 order에 '국화'보내기-->
+<!--버튼클릭->함수 flower에 '무궁화'보내기
+    버튼클릭->함수 flower에 '장미'보내기 
+    버튼클릭->함수 flower에 '국화'보내기-->
+
+<button type="button" value="무궁화" onclick="flower('무궁화')">무궁화</button>
+<button type="button" value="장미" onclick="flower('장미')">장미</button>
+<button type="button" value="국화" onclick="flower('국화')">국화</button>
+
+<script>
+  function flower(str) {
+    switch (str) {
+      case '무궁화' : alert('무궁화 동호회를 추천합니다')
+      break
+      case '장미' : alert('장미 동호회를 추천합니다')
+      break
+      case '국화' : alert('국화 동호회를 추천합니다')
+      break
+    }
+  }
+</script>
 </body>
 </html>
