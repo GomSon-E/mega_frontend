@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>지역변수 사용하기</title>
+</head>
+<body>
+  <script>
+    // 선언 명령어
+    function main() {
+      var a = 3;
+      b = 4;
+      console.log(a + b);
+    }
+
+    // console.log(b)
+    // 아직 함수를 사용하지 않았기 때문에 b를 알 수 없음 -> ERROR
+
+    main()
+    // console.log(a)
+    // a는 지역 변수이기 때문에 함수 외부에서 사용할 수 없음 -> ERROR
+    console.log(b)
+  </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>인스턴스란</title>
+</head>
+<body>
+   <!-- <script>
+      // 호이스팅: 이름 있는 함수의 경우에는 사용을 선언 이전에 할 수 있다
+      sub()
+
+      function main() {
+         console.log('WELCOME')
+      }
+
+      function sub() {
+         main()
+      }
+   </script> -->
+   
+   <script>
+      sub()
+
+      function sub() {
+         console.log('JAVASCRIPT')
+         
+         function main() {
+            console.log('WELCOME')
+         }
+         // main()
+      }
+   </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>forEach()</title>
+</head>
+<body>
+ <script>
+   let str = ['people', 'dog', 'cat', 'rabbit']
+
+   str.forEach(function(str, index){
+     document.write(`<p> ${index + 1} : ${str}</p>`)
+   })
+
+   let color = ['red', 'gray', 'blue', 'green', 'yellow']
+   color.forEach(function(item, index) {
+      document.write(`${index + 1}번째 방에 ${item}색이 있습니다</br>`)
+   })
+
+   color.forEach(function(item, index) {
+      document.write(`<img src="./images/${item}.png" alt="${item}">`)
+   })
+
+ </script>
+</body>
+
+</html>
