@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DOM</title>
+
+</head>
+
+<body>
+    <script>
+        const book = {
+            title : 'javascript',
+            author : 'A 작가',
+            num : 1,
+            list : function() {
+                document.write(
+                    `
+                    <ul>
+                        <li>책제목 : ${this.title}</li>
+                        <li>작가 : ${this.author}</li>
+                        <li>판매 부수 : ${this.num}</li>
+                    </ul>
+                    `
+                )
+            }
+        }
+
+        book.list()
+    </script>
+</body>
+
+
+
+</html>

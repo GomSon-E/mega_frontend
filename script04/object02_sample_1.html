@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사용자 객체1</title>
+    <link rel="stylesheet" href="css/box.css">
+</head>
+<body>
+    <dl>
+        <dt>그림 타이틀</dt>
+        <dd>
+            <img src="" alt="">
+        </dd>
+        <dd>그림 작가</dd>
+        <dd>그림 제작 연도</dd>
+    </dl>
+
+    <p>
+        <button type="text">버튼</button>
+    </p>
+    
+    <script>
+        const picture = {
+            src : 'images/pic01.jpg',
+            title : '에펠탑의 신랑신부',
+            artist : '마르크 샤갈',
+            year : 1938
+        }
+
+        const btn = document.querySelector('p>button')
+        const pic_title = document.querySelector('dt')
+        const pic_img = document.querySelector('dd>img')
+        const pic_artist = document.querySelector('dd:nth-child(3)')
+        const pic_year = document.querySelector('dd:nth-child(4)')
+
+        btn.onclick = function(){
+            pic_title.innerHTML = picture.title
+            pic_img.setAttribute('src', picture.src)
+            pic_img.setAttribute('alt', picture.title)
+            pic_artist.innerHTML = picture.artist
+            pic_year.innerHTML = picture.year
+        }
+    </script>
+</body>
+</html>

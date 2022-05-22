@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>리터널 단축</title>
+
+</head>
+
+<body>
+    <script>
+        const fruit = {
+            name : 'red',
+            type : 'apple',
+            list() {
+                document.write(
+                    `
+                    <dl>
+                        <dt>${this.name}</dt>
+                        <dd>${this.type}</dd>
+                    </dl>
+                    `
+                )
+            }
+        }
+
+        fruit.list()
+    </script>
+</body>
+</html>
+
+

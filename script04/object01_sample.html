@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사용자 객체1</title>
+    <link rel="stylesheet" href="css/box.css"></head>
+<body>
+
+<!-- images/pic01.jpg 
+     에펠탑의 신랑신부 
+     마르크 샤갈 
+     1938 -->
+    
+     <script>
+         const book = new Object()
+
+         book.pic = "images/pic01.jpg"
+         book.title = "에펠탑의 신랑신부"
+         book.artist = "마르크 샤갈"
+         book.year = 1938
+
+         book.show = fnction() {u
+            document.write(
+                `
+                <dl>
+                    <dt>${book.title}</dt>
+                    <dd>
+                        <img src="./${book.pic}" alt="${book.title}">
+                    </dd>
+                    <dd>${book.artist}</dd>
+                </dl>
+                `
+            )
+         }
+
+         book.show()
+     </script>
+</body>
+</html>
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>classes</title>
+</head>
+
+<body>
+<script>
+    // 생성자 함수
+    // function Book(title, type) {
+    //     this.title = title,
+    //     this.type = type
+    // }
+    // Book.prototype.action = function() {
+    //     console.log(
+    //         `${this.type} : ${this.title}`
+    //     )
+    // }
+
+    // 클래스
+    class Book {
+        constructor(title, type) {
+            this.title = title
+            this.type = type
+        }
+        action() {
+            console.log(`${this.type} : ${this.title}`)
+        }
+    }
+
+    const it = [
+        new Book('photoshop', 'photo'),
+        new Book('javascript', 'script'),
+        new Book('html', 'code'),
+    ]
+
+    it[0].action()
+    it[1].action()
+    it[2].action()
+</script>
+</body>
+</html>
