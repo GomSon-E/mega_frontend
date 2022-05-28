@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>children</title>
+</head>
+<body>
+  <p><button> 요소 추가</button></p>
+
+  <div>test</div>
+
+  <script>
+    // 추가되는 명령어 위치 확인
+    const btn = document.querySelector('button')
+    const box = document.querySelector('div')
+    btn.onclick = function(){
+      box.prepend('javascript')
+      box.append('뒤에 추가')
+      box.before('앞에')
+      box.after('끝나고 추가')
+    }
+</script>
+
+</body>
+</html>

@@ -27,10 +27,18 @@
 <script>
     // 객체
     function Picture(src, title, artist, year) {
-        this.title = title
         this.src = src
+        this.title = title
         this.artist = artist
         this.year = year
+    }
+
+    Picture.prototype.action = function(){
+        title.innerHTML = this.title
+        img.setAttribute('src', this.src)
+        img.setAttribute('alt', this.title)
+        artist.innerHTML = this.artist
+        year.innerHTML = this.year
     }
     
     // 인스턴스
@@ -43,14 +51,15 @@
 
     // 사용
     const btn = document.querySelectorAll('button')
+    const title = document.querySelector('dl>dt')
+    const img = document.querySelector('dl>dd>img')
+    const artist = document.querySelector('dl>dd:nth-child(3)')
+    const year = document.querySelector('dl>dd:nth-child(4)')
+
     btn.forEach(function(item){
-        const obj = str[item.name]
         item.onclick = function(){
-            document.querySelector('dt').innerHTML = obj.title
-            document.querySelector('dd>img').setAttribute('src', obj.src)
-            document.querySelector('dd>img').setAttribute('alt', obj.title)
-            document.querySelector('dd:nth-child(3)').innerHTML = obj.artist
-            document.querySelector('dd:nth-child(4)').innerHTML = obj.year
+            let num = this.getAttribute('name')
+            str[num].action()
         }
     })
 </script>

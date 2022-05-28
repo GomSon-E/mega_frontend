@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>creatElement</title>
+    <style>
+    *{margin:0; padding:0;}
+    img{max-width:100%;}
+      .picBox {
+      	margin: 2em auto;
+      	width: 500px;
+      }
+
+      .picBox figcaption {
+      	margin-top: 1em;
+      	padding-right: 30%;
+      	padding-left: 1em;
+      	font-style: italic;}
+    </style>
+  </head>
+  <body>
+    <figure class="picBox">
+        <img src="images/earth.jpg" alt="우주에서 본 지구의 모습입니다.">
+    </figure>
+    <script>
+    // 준비하기
+    const box = document.querySelector('.picBox')
+    const text = document.querySelector('figure>img').getAttribute('alt')
+
+    // 생성하기
+
+    // // 요즘 버전
+    // let Figcaption = document.createElement('figcaption')
+    // console.log(Figcaption)
+    // Figcaption.innerHTML = text; 
+    // console.log(Figcaption)
+    // box.appendChild(Figcaption)
+
+    // // 예전 버전 1 -> Error
+    // // appendChild(node)
+    // // node -> element, attribute, text
+    // // 현재 생성된 text는 ?????
+    // let Figcaption = document.createElement('figcaption')
+    // console.log(Figcaption)
+    // Figcaption.appendChild(text)
+    // console.log(Figcaption)
+    // box.appendChild(Figcaption)
+
+    // 예전 버전 2
+    // text node 생성
+    const alt = document.createTextNode(text)
+    console.log(alt)
+    let Figcaption = document.createElement('figcaption')
+    Figcaption.appendChild(alt)
+    console.log(Figcaption)
+    box.appendChild(Figcaption)
+    </script>
+  </body>
+</html>
