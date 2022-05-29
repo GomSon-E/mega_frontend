@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Date</title>
+</head>
+
+<body>
+<script>
+  let Dday = new Date(100000000000)
+  console.log(Dday)
+
+  // String 형 -> 'YYYY-MM-DDThh:mm:ss'
+  const Eday = new Date('2019/10/10')
+  console.log(Eday)
+  const Fday = new Date('2022-02-05T03:12:12')
+  console.log(Fday)
+
+  // Number 형 -> YYYY,MM,DD,hh,mm,ss
+  // month 주의!! - 1 해줘야 함
+  let Gday = new Date(2019, 10 - 1, 10)
+  console.log(Gday)
+
+  // set 메서드
+  Fday.setFullYear(2000)
+  console.log(Fday)
+  Fday.setMonth(10)
+  console.log(Fday)
+</script>
+</body>
+</html>

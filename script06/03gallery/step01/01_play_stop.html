@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>기본움직임</title>
+<style>
+body { font:12px "나눔고딕"; }
+#box { position: absolute; left: 0px; top: 100px; width: 100px; height: 100px; background:#0cf; }
+</style>
+
+</head>
+<body >
+ <button type="text" class="play">play</button>
+ <button type="text" class="stop">stop</button> 
+
+<div id="box">box</div>
+<script>
+  const playBTN = document.querySelector('.play')
+  const stopBTN = document.querySelector('.stop')
+  const box = document.querySelector('#box')
+  let num = 0
+  let boxMove
+
+  playBTN.addEventListener('click', move)
+  stopBTN.addEventListener('click', stop)
+
+  function move() {
+    boxMove = setInterval(play, 10)
+  }
+  function stop() {
+    clearInterval(boxMove)
+  }
+
+  function play() {
+    num ++;
+    box.style.left = num + 'px'
+  }
+</script>
+</body>
+</html>

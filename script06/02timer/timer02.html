@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>move</title>
+  <style type="text/css">
+    #box { position: absolute; left: 0px; top: 200px; width: 50px; height: 50px; z-index: 1; background-color: #0066FF; }
+    p{display:block; width:150px;
+        font:bold 25px/50px Arial,sans-serif;
+        color:#fff;
+        background-color:rgb(255, 60, 0);
+        text-align:center;}
+    </style>
+
+</head>
+<body>
+  <p>버튼</p>
+  <div id="box"></div>
+
+  <script>
+    const P = document.querySelector('p')
+    const DIV = document.querySelector('div')
+    let num = 0;
+    let pMove;
+
+    move()
+
+    // 이벤트
+    P.addEventListener('mouseover', stop) // 타이머 작동
+    P.addEventListener('mouseout', move) // 타이머 중지
+
+    // 타이머 함수
+    function move() {
+      pMove = setInterval(play, 50)
+      // setInterval(play, 50)
+    }
+    function stop() {
+      clearInterval(pMove)
+    }
+
+    // play()
+    function play() {
+      num += 2;
+      DIV.style.left = num + 'px'
+    }
+  </script>
+
+</body>
+</html>

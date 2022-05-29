@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Date</title>
+</head>
+<body>
+  <script>
+    // 오늘은 년 월 일
+
+    // 1. 인스턴스 생성
+    let today = new Date()
+
+    // 2. 출력 -> document.write
+    document.write(`오늘은 ${today.getFullYear()}년 ${today.getMonth() + 1}월 ${today.getDate()}일 <br>`)
+
+    // 3. 요일 - switch 문 이용
+    const day = today.getDay()
+    switch (day) {
+      case 0: document.write('일요일입니다.'); break;
+      case 1: document.write('월요일입니다.'); break;
+      case 2: document.write('화요일입니다.'); break;
+      case 3: document.write('수요일입니다.'); break;
+      case 4: document.write('목요일입니다.'); break;
+      case 5: document.write('금요일입니다.'); break;
+      case 6: document.write('토요일입니다.'); break;
+    }
+
+    // 4. 요일 - 배열 이용
+      const days = ['일요일입니다.', '월요일입니다.', '화요일입니다.', '수요일입니다.', '목요일입니다.', '금요일입니다.', '토요일입니다.']
+      document.write(`<br> ${days[day]}`)
+  </script>
+</body>
+</html>
