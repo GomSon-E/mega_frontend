@@ -15,5 +15,26 @@ button{width:150px; height:40px; background-color:red; color:#fff; font-size:20p
 <body >
   <button type="text">x:700,y:300</button>
   <div id="box">box</div>
+<script>
+  let x = 0
+  let y = 100
+  // end
+  let targetX = 700;
+  let targetY = 300;
+
+  function motion() {
+    x += 0.05 * (targetX - x)
+    y += 0.05 * (targetY - y)
+    document.querySelector('#box').style.left = x + 'px'
+    document.querySelector('#box').style.top = y + 'px'
+  }
+
+  // 이벤트
+  const btn = document.querySelector('button')
+  btn.addEventListener('click', play)
+  function play() {
+    setInterval(motion, 10)
+  }
+</script>
 </body>
 </html>

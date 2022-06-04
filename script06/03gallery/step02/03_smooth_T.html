@@ -1,0 +1,43 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>부드러운 움직임</title>
+<style type="text/css">
+body { font:12px "나눔고딕","맑은 고딕"; }
+#box { position: absolute; left: 0px; top: 100px; width: 100px; height: 100px; background:#0cf; }
+</style>
+</head>
+<body >
+  <button type="text" data-value="200">목적지 이동 200</button>
+  <button type="text" data-value="600">목적지 이동 600</button>
+  <button type="text" data-value="1000">목적지 이동 1000</button>
+  <div id="box">box</div>
+  <script>
+    // 시작값과 목적값 선언
+    let start = 0
+    let targetX = 0
+
+    // 기본 모션 설정
+    function motion() {
+      start += 0.07 * (targetX - start)
+      document.querySelector('#box').style.left = start + 'px'
+      console.log(targetX)
+    }
+
+    // 타이머
+    function play() {
+      setInterval(motion, 10)
+    }
+
+    // 이벤트
+    const btn = document.querySelectorAll('button')
+    btn.forEach(function(item){
+      item.addEventListener('click', function() {
+        const data = this.getAttribute('data-value')
+        play(targetX = data) // 인수를 식으로 보낼 수 있다
+      }) 
+    })
+  </script>
+</body>
+</html>

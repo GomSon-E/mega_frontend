@@ -1,0 +1,18 @@
+body h1 {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #000;
+}
+body h2 {
+  color: #FC0;
+}
+body p {
+  text-align: center;
+}
+
+/*# sourceMappingURL=/sass.0a7c4b30.css.map */
