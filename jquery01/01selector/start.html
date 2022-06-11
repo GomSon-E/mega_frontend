@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery start</title>
+<!--준비하기-->
+<script src="../js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<button type="button">sample</button>
+<p></p>
+
+<script>
+$(function(){
+  $('p').text("welcome").css('color', 'red');
+  $('button').click(function(e){
+    $('body').css('background-color', 'yellow')
+  })
+});
+</script>
+
+<!-- <script>
+  const str = document.querySelector('p')
+  str.innerHTML = 'welcome'
+  str.style.color = 'red'
+</script> -->
+</body>
+</html>
+
+
+

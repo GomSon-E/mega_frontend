@@ -1,0 +1,47 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>2.Dom</title>	
+
+<style>
+ul{display:none;}
+</style>
+
+<script src="../js/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+<button id="btn01">text수정</button>
+<button id="btn02">text가져오기1</button>
+<button id="btn03">text가져오기2</button>
+<p id="first"> text1</p>
+<p id="second"> 시작시간</p>
+<ul>
+<li>오후 1시 classA에서 시작합니다.</li>
+<li>오후 8시 classB에서 시작합니다.</li>
+</ul>
+
+<script>
+  $(function(){
+    // 버튼 1
+    $('#btn01').click(function(){
+      $('#first').text('변경되었습니다.')
+    })
+
+    // 버튼 2
+    $('#btn02').click(function(){
+      const str = $('ul>li:first').text();
+      $('#second').text(str1)
+    })
+
+    // 버튼 3
+    $('#btn03').click(function(){
+      const str = $('li:last').text()
+      $('#second').text(str2)
+    })
+  })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>선택자1</title>
+<style type="text/css">
+ul,ol{margin:0; padding:0; }
+ul{width:100%;list-style:none;}
+ul li{
+float:left;
+padding:5px;margin:5px;}
+</style>
+<script src="../js/jquery-3.6.0.min.js"></script>
+
+</head>
+<body>
+<H2>title</H2>
+<p><button id="btn_01">Click Me</button></p>
+<ul>
+<li><img src="images/flw_01.jpg" width="150"></li>
+<li><img src="images/flw_02.jpg" width="150"></li>
+<li><img src="images/flw_03.jpg" width="150"></li>
+<li><img src="images/flw_04.jpg" width="150"></li>
+<li><img src="images/flw_05.jpg" width="150"></li>
+<li><img src="images/flw_06.jpg" width="150"></li>
+</ul>
+
+<script>
+  $(function(){
+    $('#btn_01').click(function(e){
+      $('li:even').css('background-color', 'pink')
+      $('li:odd').css('background-color', '#666')
+      $('li:eq(2)').css('border', '2px solid red')
+      $('li:lt(2)').css('border', '2px solid green')
+      $('li:gt(2)').css('border', '2px solid blue')
+    })
+  })
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

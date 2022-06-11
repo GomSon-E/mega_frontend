@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>선택자2</title>
+<style type="text/css">
+ul,ol{margin:0; padding:0; }
+ol {	
+width:400px;
+height:25px;
+margin:25px;
+}
+</style>
+<script src="../js/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+<h3>제목2</h3>
+<header>제목3</header>
+<button id="btn" type="button">클릭</button>
+<ol>
+<li>첫번째 texttexttexttexttexttexttext </li>
+<li> 두번째 <span>text</span>texttexttexttexttexttext  </li>
+<li> 세번째 texttexttexttexttexttexttext  </li>
+<li></li>
+<li> 네번째 texttext<strong>text</strong>texttexttext  </li>
+<li> 다섯번째 <span>textt</span>exttex<span>ttextte</span>xttexttext  </li>
+<li> 여섯번째 texttexttexttexttexttexttext  </li>
+</ol>
+
+<script>
+  $(function(){
+    $('#btn').click(function(){
+      $('li:has(span)').css('color', 'red')
+      $('li:contains("세번")').css('background-color', 'yellow')
+      $('li:empty').text('welcome').css('background-color', 'pink')
+      $('li:not(":first-child")').css('border', '2px solid green')
+      $('span:only-child').css('background-color', 'blue')
+      $(':header').css('color', 'orange')
+    })
+  })
+</script>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

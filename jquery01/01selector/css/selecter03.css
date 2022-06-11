@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{font-size:0.8em;}
+button{margin-bottom:50px;}
+dl, dt,dd{margin:0; padding:0;}
+dl{width:500px; text-align:center;}
+dt{width:150px; clear:both;float:left;
+     border:1px solid #000;
+     padding:10px 0;
+     border-right:none;
+     box-sizing:border-box;
+     margin-bottom:10px;}
+dd{width:350px; float:left; border:1px solid #000;
+     box-sizing:border-box;
+     padding:10px 0;
+     margin-bottom:10px;}
