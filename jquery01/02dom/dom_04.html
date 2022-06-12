@@ -12,6 +12,7 @@ section>div{width:100%; padding:25px 0; overflow:hidden;}
 section>div>div{width:110px; margin:0 3px; float:left;}
 section div.box01{border:5px solid #F30; padding:3px; background-color:#FF0;}
 </style>
+<script src="./../js/jquery-3.6.0.min.js"></script>
 
 </head>
 <body>
@@ -33,6 +34,18 @@ section div.box01{border:5px solid #F30; padding:3px; background-color:#FF0;}
 	<p><img src="images/img03.png" alt="이미지03"></p>
 </div>
 
+<script>
+	$(function(){
+		$('#btn01').click(function() {
+			const str = $('.box01').css('border')
+			$('.box02').css('border', str)
+		})
+		$('#btn02').click(function() {
+			const str = $('.box01').css('background-color')
+			$('.box03').css('background-color', str)
+		})
+	})
+</script>
 
 </div>
 </section>

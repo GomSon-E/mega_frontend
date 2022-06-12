@@ -8,6 +8,8 @@
 p{width:500px; padding:10px; margin:20px; border:3px solid #36F;}
 </style>
 
+<script src="../js/jquery-3.6.0.min.js"></script>
+
 </head>
 <body>
 <p>
@@ -22,5 +24,25 @@ p{width:500px; padding:10px; margin:20px; border:3px solid #36F;}
 <em>나만 틀려요</em>
 <strong> 텍스트텍스트</strong>
 </div>
+
+<script>
+  $(function(){
+    $('#btn01').click(function(){
+      // 독립적
+      $('strong').wrap('<p>')
+    })
+    $('#btn02').click(function(){
+      // 선택자만 따로 꺼내서 모음 -> 구조가 변경이 됨
+      $('strong').wrapAll('<p>')
+    })
+    $('#btn03').click(function(){
+      $('div').wrapInner('<p>')
+    })
+    $('#btn04').click(function(){
+      $('strong').unwrap()
+    })
+  })
+</script>
+
 </body>
 </html>

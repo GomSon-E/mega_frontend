@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>바꾸기</title>
-
+<script src="../js/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 <button id="btn01">replace</button>
@@ -19,5 +19,34 @@
 <p class="no05">채우기 </p>
 <p class="no06">복제하기</p>
 <p class="no07">자르기</p>
+
+<script>
+  $(function(){
+    $('#btn01').click(function(e){
+      // 선택자 없애기 + 콘텐츠 변경
+      $('.no01').replaceWith('<h1>변경</h1>')
+    })
+    $('#btn02').click(function(e){
+      // 콘텐츠만 변경
+      $('.no02').html('<h1>콘텐츠 추가</h1>')
+    })
+    $('#btn03').click(function(e){
+      // 선택자 없애기 + 콘텐츠 없애기
+      $('.no03').remove()
+    })
+    $('#btn04').click(function(e){
+      // 콘텐츠만 없애기
+      $('.no04').empty()
+    })
+    $('#btn05').click(function(e){
+      const str = $('.no06').clone()
+      $('.no05').prepend(str)
+    })
+    $('#btn06').click(function(e){
+      const str = $('.no07').detach()
+      $('.no05').append(str)
+    })
+  })
+</script>
 </body>
 </html>

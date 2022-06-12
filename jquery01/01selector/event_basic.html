@@ -11,6 +11,7 @@ p.button{width:200px; height:70px; float:left; background:#333;
 text-align:center; line-height:70px; font-size:1.2em; color:#fff;}
 p.back{width:450px; height:66px; border:2px solid #333; float:right;}
 </style>
+<script src="../js/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -53,8 +54,18 @@ div#box_05 p.button을 위에 놓으면2  div#box_05 p.back의 백그라운드 �
 div#box_06 p.button을 위에 놓으면3  div#box_06 p.back의 백그라운드 칼라를 black
 
 div>p의 첫번째 에 마우스가 떠나면 p.back의 백그라운드 칼라를화이트
-
 -->
+
+<script>
+  $(function(){
+    $('#box_01>.button').click(function(e){
+      // $('#box_01>.back').css('background-color', 'red')
+      // $(this).next().css('background-color', 'red')
+      $(this).siblings().css('background-color', 'red')
+      $(this).parent().css('background-color', 'yellow')
+    })
+  })
+</script>
 
 </body>
 </html>

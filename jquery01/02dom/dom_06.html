@@ -7,6 +7,7 @@
 section{width:500px; margin:25px auto; text-align:center;}
 div{display:none;}
 </style>
+<script src="../js/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 <section>
@@ -17,6 +18,19 @@ div{display:none;}
 	<img src="images/pic1.jpg" alt="sample"></p>
 <p class="test">1</p>
 </section>
+
+<script>
+	$(function() {
+		let i = 2;
+		$('#btn01').click(function() {
+			if (i > 7) {i = 1}
+			let str = 'images/pic' + i + '.jpg'
+			$('.box01>img').attr('src', str)
+			$('.test').text(i)
+			i++
+		})
+	})
+</script>
 
 </body>
 </html>

@@ -8,6 +8,7 @@
 section{width:500px; margin:25px auto; text-align:center;}
 div{display:none;}
 </style>
+<script src="./../js/jquery-3.6.0.min.js"></script>
 
 </head>
 <body>
@@ -20,8 +21,22 @@ div{display:none;}
 <p class="box02"><a href="http://www.naver.com">다음으로 변경하기</a></p>
 
 <div>
-	<img src="images/img02.png" alt="sample"></div>
+	<img src="images/img02.png" alt="sample">
+</div>
 </section>
+
+<script>
+	$(function() {
+		$('#btn01').click(function() {
+			const pic = $('div>img').attr('src')
+			$('.box01>img').attr('src', pic)			
+		})
+		$('#btn02').click(function(){
+			$('.box02>a').attr('href', 'http://www.daum.net').text('다음사이트')
+		})
+	})
+</script>
+
 </body>
 </html>
 

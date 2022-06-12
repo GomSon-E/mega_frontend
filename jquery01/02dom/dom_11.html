@@ -9,6 +9,7 @@ cursor:pointer; }
 .blue { color:blue; }
 .highlight { background:yellow; }
 </style>
+<script src="../js/jquery-3.6.0.min.js"></script>
 
 </head>
 <body>
@@ -17,5 +18,14 @@ cursor:pointer; }
 <p class="blue highlight">highlight</p>
 <p class="blue">on these</p>
 <p class="blue">paragraphs</p>
+
+<script>
+  $(function() {
+    $('p').click(function(e){
+      $(this).toggleClass('highlight')
+    })
+  })
+</script>
+
 </body>
 </html>
