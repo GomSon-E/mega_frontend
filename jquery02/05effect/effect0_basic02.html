@@ -8,11 +8,20 @@
 p{width:150px; height:150px; background-color:#F00;
 	position:absolute; top:100px; left:100px;}
 </style>
+<script src="../js/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
 <button>run</button>
 <p></p>
+
+<script>
+	$(function(){
+		$('button').on('click', function(e){
+			$('p').animate({left:'500px'}, 500, 'linear')
+		})
+	})
+</script>
 
 </body>
 </html>

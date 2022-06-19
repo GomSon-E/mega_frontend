@@ -19,13 +19,22 @@
 
 <script>
 	$(function(){
+		// String형 사용
+		// const liWidth = $('ul>li').css('width')
+		// $('#flower').on('click', function(e){
+		// 	$('ul').animate({marginLeft:'-='+liWidth})
+		// })
+		// $('#building').on('click', function(e){
+		// 	$('ul').animate({marginLeft:'+='+liWidth})
+		// })
+
+		// number형 사용
+		const liWidth = $('ul>li').width()
 		$('#flower').on('click', function(e){
-			// $('ul').animate({marginLeft:'-400px'})
-			$('ul').animate({marginLeft:'-=400px'})
+			$('ul').animate({marginLeft:'-='+liWidth+'px'})
 		})
 		$('#building').on('click', function(e){
-			// $('ul').animate({marginLeft:'0px'})
-			$('ul').animate({marginLeft:'+=400px'})
+			$('ul').animate({marginLeft:'+='+liWidth+'px'})
 		})
 	})
 </script>

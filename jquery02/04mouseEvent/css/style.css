@@ -8,7 +8,7 @@ ul, li{list-style:none;}
 #prev{left:-12px;}
 #next{right:-12px;}
 #bigImage{width:800px; margin:0 auto;}
-#show_view{width:555px; height:119px;/*overflow:hidden; */}
+#show_view{width:555px; height:119px;overflow:hidden;}
 
 ul{width: 950px; }
 li{float:left; padding:5px; background:#000;}

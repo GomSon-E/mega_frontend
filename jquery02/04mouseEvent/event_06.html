@@ -5,10 +5,20 @@
 <title>on,one,off사용하기</title>
 <style>
 </style>
+<script src="../js/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
 <button>화면을 변경</button>
 <div></div>
+
+<script>
+  $(function(){
+    $('button').one('click', function(e){
+      alert('welcome')
+    })
+  })
+</script>
+
 </body>
 </html>

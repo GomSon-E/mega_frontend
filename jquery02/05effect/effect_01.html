@@ -16,6 +16,7 @@ background:red;
 display:none;
 }
 </style>
+<script src="../js/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 <section>
@@ -29,6 +30,19 @@ display:none;
 </div>
 </section>
 
+<script>
+  $(function(){
+    $('button.btn01').on('click', function(e){
+      // $('.back01').css('background-color', 'yellow').fadeIn(1000)
+      $('.back01').fadeIn(1000)
+      $('.back01').css('background-color', 'yellow')
+    })
+
+    $('button.btn02').on('click', function(e){
+      $('.back02').fadeIn(1000, 'linear', function(){$(this).css('background-color', 'yellow')})
+    })
+  })
+</script>
 
 </body>
 </html>

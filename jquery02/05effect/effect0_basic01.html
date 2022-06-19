@@ -10,6 +10,7 @@ p:first-child{width:300px; height:70px; float:left; background:#333;
 text-align:center; line-height:70px; font-size:1.2em; color:#fff;}
 p:last-child{width:480px; height:66px; background:#099; float:right; }
 </style>
+<script src="../js/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -48,16 +49,49 @@ p:last-child{width:480px; height:66px; background:#099; float:right; }
 <p class="back04"></p>
 </div>
 
+<script>
+  $(function(){
+    // effect 01
+    $('#effect01 .btn01').on('click', function(e){
+      $(this).parent().siblings().show(1000)
+      // $(this).parent().next().show()
+    })
+    $('#effect01 .btn02').on('click', function(e){
+      $(this).parent().siblings().hide(1000)
+    })
+    $('#effect01 .btn03').on('click', function(e){
+      $(this).parent().siblings().toggle(1000)
+    })
+    // 시간을 넣을 경우, float 기준에서 사선으로 움직임
+    
+    // effect 02
+    $('#effect02 .btn01').on('click', function(e){
+      $(this).parent().siblings().slideUp()
+    })
+    $('#effect02 .btn02').on('click', function(e){
+      $(this).parent().siblings().slideDown()
+    })
+    $('#effect02 .btn03').on('click', function(e){
+      $(this).parent().siblings().slideToggle()
+    })
 
+    // effect 03
+    $('#effect03 .btn01').on('click', function(e){
+      $(this).parent().siblings().fadeIn()
+    })
+    $('#effect03 .btn02').on('click', function(e){
+      $(this).parent().siblings().fadeOut()
+    })
 
-
-
-
-
-
-
-
-
+    // effect 04
+    $('#effect04 .btn01').on('click', function(e){
+      $(this).parent().siblings().fadeTo(800, 0.5)
+    }) // fadeIn의 기준을 변경
+    $('#effect04 .btn02').on('click', function(e){
+      $(this).parent().siblings().fadeToggle()
+    })
+  })
+</script>
 
 </body>
 </html>

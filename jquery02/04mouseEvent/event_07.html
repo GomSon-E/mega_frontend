@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>event</title>
-
+<script src="../js/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 <button>li 요소를 추가</button>
@@ -14,5 +14,30 @@
 </ul>
 <p><img src="img/flower.jpg" alt=" 꽃" /></p>
 
+<script>
+  $(function(){
+    // 1
+    $('button').click(function(e){
+      $('#linkBtn').append('<li><a href="./img/building.jpg">빌딩</a></li>')
+    })
+    // 2
+    // 안되는 버전
+    // $('#linkBtn>li>a').click(function(e){
+    //   const pic = $(this).attr('href')
+    //   console.log(pic)
+    //   $('p>img').attr('src', pic)
+    //   return false;
+    // })
+
+    // $(영역).on('이벤트', '선택자', function(){}) 사용버전
+    // 영역 인식 -> 선택자 찾기
+    $('#linkBtn').on('click', 'li>a', function(e){
+      const pic = $(this).attr('href')
+      console.log(pic)
+      $('p>img').attr('src', pic)
+      return false;
+    })
+  })
+</script>
 </body>
 </html>

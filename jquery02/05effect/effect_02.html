@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>움직이지 않는 객체</title>
+<title>광클릭 막기</title>
 <!--움직이지 않는 객체만 선택하기-->
 <style type="text/css">
 div{
@@ -12,6 +12,7 @@ background:red;
 display:none;
 }
 </style>
+<script src="../js/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 	<button id="show">표시</button>
@@ -19,6 +20,20 @@ display:none;
 	<div id="back_01">some forms of augmented reality can now be used in our daily lives 2.contact lenses that give GPS directions have not been created yet 3.augmented reality might be used as a tool for exposing an individual`s information.some forms of augmented reality can now be used in our daily lives 2.contact lenses that give GPS directions have not been created yet 3.augmented reality might be used as a tool for exposing an individual`s information.</div>
 	<p></p>
  
+	<script>
+		$(function(){
+			// 움직이는 선택자의 선택을 막기
+			// 움직이는 선택자 제외하고 선택
+			// 선택자:not(:animated).effect 명령어()
+			// .stop.animate()
+			$('#show').on('click', function(){
+				$('#back_01:not(:animated)').slideDown(3000)
+			})
+			$('#hide').on('click', function(){
+				$('#back_01:not(:animated)').slideUp(3000)
+			})
+		})
+	</script>
     
 </body>
 </html>

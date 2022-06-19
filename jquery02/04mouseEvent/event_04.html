@@ -13,5 +13,29 @@
 <li><a href="img/room_04.jpg">room04</a></li>
 </ul>
 <p id="back_pic"><img src="img/room_05.jpg" alt="room05" /></p>
+
+<script>
+  // $(function(){
+  //     $('#list_btn>li>a').on('dblclick', function(e){
+  //       const img = $(this).attr('href')
+  //       $('#back_pic>img').attr('src', img)
+  //       return false;
+  //     }).on('click', function(){ return false; })
+  // })
+
+  // $('a').dblclick().click()
+  // $('a').mousedown().click()
+  // $('a').mouseup().click()
+  // + return false;
+
+  $(function(){
+    $('#list_btn>li>a').dblclick(function(e){
+      const pic = $(this).attr('href')
+      console.log(pic)
+      $('p#back_pic>img').attr('src', pic)
+    }).click(function(){ return false; })
+  })
+</script>
+
 </body>
 </html> 

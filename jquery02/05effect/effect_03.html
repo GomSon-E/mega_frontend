@@ -11,9 +11,18 @@ background:red;
 display:none;
 }
 </style>
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/"></script>
+
 </head>
 <body>
 	<button id="btnAll">표시・비표시</button>
 	<div id="backImg"></div>
+
+	<script>
+		$('button').on('click', function(e){
+			$('#backImg').slideToToggle(1000)
+		})
+	</script>
 </body>
 </html>

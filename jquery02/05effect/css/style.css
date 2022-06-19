@@ -3,10 +3,16 @@
 div{
 width:400px;
 height:267px;
+overflow: hidden;
 }
 /*전체기준*/
 ul{width:800px;
-height:267px;}
+height:267px;
+display: flex;
+flex-wrap: wrap;
+}
 /*보이는 것 기준*/
-ul>li{}
+ul>li{
+  display: inline;
+}
 ul>li>img{vertical-align:top;}

@@ -10,6 +10,9 @@ div#menu p{clear:both; width:100%; text-align:center;}
 div#menu p>img{padding:0 10px;}
 
 /*메인이미지*/
-div#main{width:502px; float:right;}
+div#main{width:502px; float:right;
+  position: relative;
+}
 div#main>img{border:3px solid #000;
-left:0; top:0;}
+  position: absolute;
+  left:0; top:0;}

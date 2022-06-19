@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>sample</title>
 <link rel="stylesheet" href="css/style.css">
-
+<script src="../js/jquery-3.6.0.min.js"></script>
 </head>
 <body>
 <!--큰이미지-->
@@ -30,5 +30,37 @@
 <img src="pic/flw_05.jpg" width="175px" ></a></li>
 </ul></div></div>
 </div>
+
+<script>
+  // $(function(){
+  //   $('.smallImage').click(function(e){
+  //     let img = $(this).attr('href')
+  //     $('#bigImage > img').attr('src', img)
+  //     return false;
+  //   })
+  //   $('#prev').click(function(e){
+  //     $('li').first().appendTo('ul')
+  //   }) 
+  //   $('#next').click(function(e){
+  //     $('li').last().prependTo('ul')
+  //   })
+  // })
+
+  $(function(){
+    $('#show_view>ul>li>a').on('click', function(){
+      const pic = $(this).attr('href')
+      $('#bigImage>img').attr('src', pic)
+      return false;
+    })
+    
+    // a요소가 아니기 때문에 return false; 안해도 됨
+    $('#prev').on('click', function(e){
+      $('#show_view>ul>li:last').prependTo('#show_view>ul')
+    })
+    $('#next').on('click', function(e){
+      $('#show_view>ul>li:first').appendTo('#show_view>ul')
+    })
+  })
+</script>
 </body>
 </html>
