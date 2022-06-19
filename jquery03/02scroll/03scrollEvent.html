@@ -1,0 +1,357 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>JQuery</title>
+<style type="text/css">
+body { margin:0; font: 30px "나눔고딕"; color:#999;
+			width:2000px;}
+a { text-decoration:none; color:#fc6; }
+
+#wrap { width:600px; background:#ffc; }
+#top { position:fixed; right:50px; bottom:100px; background:#333; }
+#tt { position:fixed; left:0; top:0; z-index:100; background:#f39; color:#ff0; padding:7px; }
+</style>
+<script src="../js/jquery-3.6.0.min.js"></script>
+</head>
+<script>
+      $(function(){
+            // $(window).scroll()
+            $(window).on('scroll', function(e){
+                  const num = $('html, body').scrollTop()
+                  const scroll = Math.ceil(num)
+                  if (scroll <= 1500) {
+                        $('body').css('background-color', 'pink')
+                  }
+                  else if (scroll > 1500 && scroll <= 4500) {
+                        $('body').css('background-color', 'orange')
+                  }
+                  else if (scroll > 4500 && scroll <= 7500) {
+                        $('body').css('background-color', '#666')
+                  }
+                  else {
+                        $('body').css('background-color', 'green')
+                  }
+
+                  $('#tt').text(scroll)
+            })   
+      })
+</script>
+<body>
+<div id="tt">text</div> 
+<div id="wrap">
+      
+      Design
+      
+      1. 
+      ARRANGEMENT | [U , C] (건물・책・기계 등의) 디자인(된 형태) 예문닫기 
+      The basic design of the car is very similar to that of earlier models. 
+      
+      그 차의 기본적인 디자인은 이전 모델들의 디자인과 아주 비슷하다.
+      
+      special new design features 
+      
+      특별히 새로운 디자인적 특징
+      
+      The magazine will appear in a new design from next month. 
+      
+      다음달부터 본 잡지가 새로운 디자인으로 선을 보입니다.
+      
+      2. 
+      DRAWING/PLAN/MODEL | [U] 디자인(술), 설계(법)  interior design 예문닫기 
+      a course in art and design 
+      
+      미술・디자인 과정
+      
+      a design studio 
+      
+      디자인[설계]실
+      
+      computer-aided design 
+      
+      전산 (도움) 설계
+      
+      the design and development of new products 
+      
+      신상품 설계 및 개발
+      
+      3. 
+      DRAWING/PLAN/MODEL | [C] ~ (for sth) 설계도, 도안 예문닫기 designs for aircraft 
+      
+      항공기 설계도
+      
+      new and original designs 
+      
+      새롭고 독창적인 도안들
+      
+      4. 
+      PATTERN | [C] 무늬 예문닫기 floral/abstract/geometric designs 
+      
+      꽃무늬/추상적 무늬/기하학적 무늬
+      
+      The tiles come in a huge range of colours and designs. 
+      
+      타일은 색상과 무늬가 대단히 다양하게 나옵니다.
+      
+      5. 
+      INTENTION | [U , C] 계획, 의도 예문닫기 It happened—whether by accident or design—that the two of them were left alone after all the others had gone. 
+      
+      우연이었건 의도적이었건, 다른 사람들이 다 떠난 뒤에 그 두 사람만 남게 되는 일이 발생했다.
+      
+      It is all part of his grand design. 
+      
+      그것은 모두 그의 거대한 계획의 일부이다.
+      
+      [VERB] When someone designs a garment, building, machine, or other object, they plan it and make a detailed drawing of it from which it can be built or made.They wanted to design a machine that was both attractive and practical.
+      men wearing specially designed boots.
+      [VERB] When someone designs a survey, policy, or system, they plan and prepare it, and decide on all the details of it.We may be able to design a course to suit your particular needs
+      A number of very well designed studies have been undertaken.
+      [VERB] If something is designed for a particular purpose, it is intended for that purpose.This project is designed to help landless people
+      It's not designed for anyone under age eighteen.
+      [NOUN] Design is the process and art of planning and making detailed drawings of something.He was a born mechanic with a flair for design
+      [NOUN][usu with supp] The design of something is the way in which it has been planned and made.a new design of clock
+      BMW is recalling 8,000 cars because of a design fault.
+      [NOUN] A design is a drawing which someone produces to show how they would like something to be built or made.They drew up the design for the house in a week.
+      [NOUN] A design is a pattern of lines, flowers, or shapes which is used to decorate something.Many pictures have been based on simple geometric designs.
+      [NOUN] A design is a general plan or intention that someone has in their mind when they are doing something.Is there some design in having him in the middle?
+      [PHRASE] If something happens or is done by design, someone does it deliberately, rather than by accident.The pair met often-at first by chance but later by design.
+      [PHRASE][V inflects] If someone has designs on something, they want it and are planning to get it, often in a dishonest way.His colonel had designs on his wife
+          
+      Design
+      
+      1. 
+      ARRANGEMENT | [U , C] (건물・책・기계 등의) 디자인(된 형태) 예문닫기 The basic design of the car is very similar to that of earlier models. 
+      
+      그 차의 기본적인 디자인은 이전 모델들의 디자인과 아주 비슷하다.
+      
+      special new design features 
+      
+      특별히 새로운 디자인적 특징
+      
+      The magazine will appear in a new design from next month. 
+      
+      다음달부터 본 잡지가 새로운 디자인으로 선을 보입니다.
+      
+      2. 
+      DRAWING/PLAN/MODEL | [U] 디자인(술), 설계(법)  interior design 예문닫기 a course in art and design 
+      
+      미술・디자인 과정
+      
+      a design studio 
+      
+      디자인[설계]실
+      
+      computer-aided design 
+      
+      전산 (도움) 설계
+      
+      the design and development of new products 
+      
+      신상품 설계 및 개발
+      
+      3. 
+      DRAWING/PLAN/MODEL | [C] ~ (for sth) 설계도, 도안 예문닫기 designs for aircraft 
+      
+      항공기 설계도
+      
+      new and original designs 
+      
+      새롭고 독창적인 도안들
+      
+      4. 
+      PATTERN | [C] 무늬 예문닫기 floral/abstract/geometric designs 
+      
+      꽃무늬/추상적 무늬/기하학적 무늬
+      
+      The tiles come in a huge range of colours and designs. 
+      
+      타일은 색상과 무늬가 대단히 다양하게 나옵니다.
+      
+      5. 
+      INTENTION | [U , C] 계획, 의도 예문닫기 It happened—whether by accident or design—that the two of them were left alone after all the others had gone. 
+      
+      우연이었건 의도적이었건, 다른 사람들이 다 떠난 뒤에 그 두 사람만 남게 되는 일이 발생했다.
+      
+      It is all part of his grand design. 
+      
+      그것은 모두 그의 거대한 계획의 일부이다.
+      
+      [VERB] When someone designs a garment, building, machine, or other object, they plan it and make a detailed drawing of it from which it can be built or made.They wanted to design a machine that was both attractive and practical.
+      men wearing specially designed boots.
+      [VERB] When someone designs a survey, policy, or system, they plan and prepare it, and decide on all the details of it.We may be able to design a course to suit your particular needs
+      A number of very well designed studies have been undertaken.
+      [VERB] If something is designed for a particular purpose, it is intended for that purpose.This project is designed to help landless people
+      It's not designed for anyone under age eighteen.
+      [NOUN] Design is the process and art of planning and making detailed drawings of something.He was a born mechanic with a flair for design
+      [NOUN][usu with supp] The design of something is the way in which it has been planned and made.a new design of clock
+      BMW is recalling 8,000 cars because of a design fault.
+      [NOUN] A design is a drawing which someone produces to show how they would like something to be built or made.They drew up the design for the house in a week.
+      [NOUN] A design is a pattern of lines, flowers, or shapes which is used to decorate something.Many pictures have been based on simple geometric designs.
+      [NOUN] A design is a general plan or intention that someone has in their mind when they are doing something.Is there some design in having him in the middle?
+      [PHRASE] If something happens or is done by design, someone does it deliberately, rather than by accident.The pair met often-at first by chance but later by design.
+      [PHRASE][V inflects] If someone has designs on something, they want it and are planning to get it, often in a dishonest way.His colonel had designs on his wife
+      
+      
+      
+      Design
+      
+      1. 
+      ARRANGEMENT | [U , C] (건물・책・기계 등의) 디자인(된 형태) 예문닫기 
+      The basic design of the car is very similar to that of earlier models. 
+      
+      그 차의 기본적인 디자인은 이전 모델들의 디자인과 아주 비슷하다.
+      
+      special new design features 
+      
+      특별히 새로운 디자인적 특징
+      
+      The magazine will appear in a new design from next month. 
+      
+      다음달부터 본 잡지가 새로운 디자인으로 선을 보입니다.
+      
+      2. 
+      DRAWING/PLAN/MODEL | [U] 디자인(술), 설계(법)  interior design 예문닫기 
+      a course in art and design 
+      
+      미술・디자인 과정
+      
+      a design studio 
+      
+      디자인[설계]실
+      
+      computer-aided design 
+      
+      전산 (도움) 설계
+      
+      the design and development of new products 
+      
+      신상품 설계 및 개발
+      
+      3. 
+      DRAWING/PLAN/MODEL | [C] ~ (for sth) 설계도, 도안 예문닫기 designs for aircraft 
+      
+      항공기 설계도
+      
+      new and original designs 
+      
+      새롭고 독창적인 도안들
+      
+      4. 
+      PATTERN | [C] 무늬 예문닫기 floral/abstract/geometric designs 
+      
+      꽃무늬/추상적 무늬/기하학적 무늬
+      
+      The tiles come in a huge range of colours and designs. 
+      
+      타일은 색상과 무늬가 대단히 다양하게 나옵니다.
+      
+      5. 
+      INTENTION | [U , C] 계획, 의도 예문닫기 It happened—whether by accident or design—that the two of them were left alone after all the others had gone. 
+      
+      우연이었건 의도적이었건, 다른 사람들이 다 떠난 뒤에 그 두 사람만 남게 되는 일이 발생했다.
+      
+      It is all part of his grand design. 
+      
+      그것은 모두 그의 거대한 계획의 일부이다.
+      
+      [VERB] When someone designs a garment, building, machine, or other object, they plan it and make a detailed drawing of it from which it can be built or made.They wanted to design a machine that was both attractive and practical.
+      men wearing specially designed boots.
+      [VERB] When someone designs a survey, policy, or system, they plan and prepare it, and decide on all the details of it.We may be able to design a course to suit your particular needs
+      A number of very well designed studies have been undertaken.
+      [VERB] If something is designed for a particular purpose, it is intended for that purpose.This project is designed to help landless people
+      It's not designed for anyone under age eighteen.
+      [NOUN] Design is the process and art of planning and making detailed drawings of something.He was a born mechanic with a flair for design
+      [NOUN][usu with supp] The design of something is the way in which it has been planned and made.a new design of clock
+      BMW is recalling 8,000 cars because of a design fault.
+      [NOUN] A design is a drawing which someone produces to show how they would like something to be built or made.They drew up the design for the house in a week.
+      [NOUN] A design is a pattern of lines, flowers, or shapes which is used to decorate something.Many pictures have been based on simple geometric designs.
+      [NOUN] A design is a general plan or intention that someone has in their mind when they are doing something.Is there some design in having him in the middle?
+      [PHRASE] If something happens or is done by design, someone does it deliberately, rather than by accident.The pair met often-at first by chance but later by design.
+      [PHRASE][V inflects] If someone has designs on something, they want it and are planning to get it, often in a dishonest way.His colonel had designs on his wife
+          
+      Design
+      
+      1. 
+      ARRANGEMENT | [U , C] (건물・책・기계 등의) 디자인(된 형태) 예문닫기 The basic design of the car is very similar to that of earlier models. 
+      
+      그 차의 기본적인 디자인은 이전 모델들의 디자인과 아주 비슷하다.
+      
+      special new design features 
+      
+      특별히 새로운 디자인적 특징
+      
+      The magazine will appear in a new design from next month. 
+      
+      다음달부터 본 잡지가 새로운 디자인으로 선을 보입니다.
+      
+      2. 
+      DRAWING/PLAN/MODEL | [U] 디자인(술), 설계(법)  interior design 예문닫기 a course in art and design 
+      
+      미술・디자인 과정
+      
+      a design studio 
+      
+      디자인[설계]실
+      
+      computer-aided design 
+      
+      전산 (도움) 설계
+      
+      the design and development of new products 
+      
+      신상품 설계 및 개발
+      
+      3. 
+      DRAWING/PLAN/MODEL | [C] ~ (for sth) 설계도, 도안 예문닫기 designs for aircraft 
+      
+      항공기 설계도
+      
+      new and original designs 
+      
+      새롭고 독창적인 도안들
+      
+      4. 
+      PATTERN | [C] 무늬 예문닫기 floral/abstract/geometric designs 
+      
+      꽃무늬/추상적 무늬/기하학적 무늬
+      
+      The tiles come in a huge range of colours and designs. 
+      
+      타일은 색상과 무늬가 대단히 다양하게 나옵니다.
+      
+      5. 
+      INTENTION | [U , C] 계획, 의도 예문닫기 It happened—whether by accident or design—that the two of them were left alone after all the others had gone. 
+      
+      우연이었건 의도적이었건, 다른 사람들이 다 떠난 뒤에 그 두 사람만 남게 되는 일이 발생했다.
+      
+      It is all part of his grand design. 
+      
+      그것은 모두 그의 거대한 계획의 일부이다.
+      
+      [VERB] When someone designs a garment, building, machine, or other object, they plan it and make a detailed drawing of it from which it can be built or made.They wanted to design a machine that was both attractive and practical.
+      men wearing specially designed boots.
+      [VERB] When someone designs a survey, policy, or system, they plan and prepare it, and decide on all the details of it.We may be able to design a course to suit your particular needs
+      A number of very well designed studies have been undertaken.
+      [VERB] If something is designed for a particular purpose, it is intended for that purpose.This project is designed to help landless people
+      It's not designed for anyone under age eighteen.
+      [NOUN] Design is the process and art of planning and making detailed drawings of something.He was a born mechanic with a flair for design
+      [NOUN][usu with supp] The design of something is the way in which it has been planned and made.a new design of clock
+      BMW is recalling 8,000 cars because of a design fault.
+      [NOUN] A design is a drawing which someone produces to show how they would like something to be built or made.They drew up the design for the house in a week.
+      [NOUN] A design is a pattern of lines, flowers, or shapes which is used to decorate something.Many pictures have been based on simple geometric designs.
+      [NOUN] A design is a general plan or intention that someone has in their mind when they are doing something.Is there some design in having him in the middle?
+      [PHRASE] If something happens or is done by design, someone does it deliberately, rather than by accident.The pair met often-at first by chance but later by design.
+      [PHRASE][V inflects] If someone has designs on something, they want it and are planning to get it, often in a dishonest way.His colonel had designs on his wife   
+</div>
+<div id="top"><a href="#">Top</a></div>
+<script>
+  
+</script>
+</body>
+</html>
+
+
+
+
+
+

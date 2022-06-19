@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>val</title>
+<script src="../js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+<div>
+  <button>Feed</button>
+  <button>the</button>
+  <button>Input</button>
+</div>
+<p><input type="text" value="click a button"></p>
+
+<script>
+  $(function(){
+    $('input').on('change', function(){
+      $('p').append('<span>변경되었습니다</span>')
+    })
+    $('input').on('focus', function(){
+      $('p>span').remove()
+      $('input').val('click a button')
+    })
+  })
+</script>
+</body>
+</html>

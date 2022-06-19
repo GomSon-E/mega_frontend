@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>val</title>
+<script src="../js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+<input type="text" value="some text">
+<p></p>
+
+<script>
+  $(function(){
+    // 시점 정하기 : 키워드가 들어가면 = 키보드가 사용이 되면
+    $('input').on('keyup', function(e){
+      let str = $(this).val()
+      $('p').text(str)
+    })
+    // 현재 있는 value값 없애기
+    $('input').on('blur', function(e){
+      $(this).val('some text')
+      $('p').empty()
+    })
+  })
+</script>
+
+</body>
+</html>

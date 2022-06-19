@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>val</title>
+<script src="../js/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+
+<p> <input type="text" name="user" value="초기값"></p>
+<p><textarea cols="30" rows="10" placeholder="초기값"></textarea></p>
+
+<button>Set the value of the input field</button>
+
+<script>
+  $(function(){
+    $('button').on('click', function(){
+      $('input').val('welcome')
+      $('textarea').attr('placeholder', '값변경')
+    })
+  })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>modal</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+<link rel="stylesheet" href="../css/index.css">
+<script src="../js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+<ul>
+<li><a href="img/img_01.jpg" class="modal"><img src="img/img_01.jpg" width="140" height="105" ></a></li>
+<li><a href="img/img_02.jpg" class="modal"><img src="img/img_02.jpg" width="140" height="105"></a></li>
+<li><a href="img/img_03.jpg" class="modal"><img src="img/img_03.jpg" width="140" height="105"></a></li>
+<li><a href="img/img_09.jpg" class="modal"><img src="img/img_09.jpg" width="140" height="105"></a></li>
+<li><a href="img/img_05.jpg" class="modal"><img src="img/img_05.jpg" width="140" height="105"></a></li>
+<li><a href="img/img_06.jpg" class="modal"><img src="img/img_06.jpg" width="140" height="105"></a></li>
+<li><a href="img/img_07.jpg" class="modal"><img src="img/img_07.jpg" width="140" height="105"></a></li>
+<li><a href="img/img_08.jpg" class="modal"><img src="img/img_08.jpg" width="140" height="105"></a></li>
+</ul>
+<p id="test"></p>
+
+<script>
+  $(function(){
+    // 콘텐츠 -> position: fixed
+    $('body').append('<div id="back"><p class="btn">close</p></div><div id="main"></div>')
+
+    // image - click
+    $('ul>li>a').on('click', function(e){
+      const pic = $(this).attr('href')
+      console.log(pic)
+      $('#back, #main').show()
+      $('#main').prepend('<img src="'+pic+'" alt="">')
+
+      // 스타일 수정
+      const picW = $('#main>img').width() / 2
+      const picH = $('#main>img').height() / 2
+      $('#main>img').css({
+        marginLeft: '-'+picW+'px',
+        marginTop: '-'+picH+'px'
+        })
+
+      return false;
+    })
+
+    // close - click
+    $('.btn').on('click', function(e){
+      $('#back, #main').hide()
+      $('#main').empty()
+    })
+  })
+</script>
+
+</body>
+</html>
