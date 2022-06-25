@@ -1,0 +1,17 @@
+section {
+    width: 100vw;
+    height: auto;
+    background-color: yellow;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+div {
+    /* width: 33.3333vw; height: 33.3333vw; */
+    width: 30vw; height: 30vw;
+    background-color: green;
+    border-radius: 50%;
+}
+ 

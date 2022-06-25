@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+/* 가변이미지 -> 기준 */
+img{
+  max-width: 100%; /* 원래 이미지 크기 이상은 안 커지게 */
+}
+
+div#box {
+  width: 100% /* 1200px */;
+  height: 600px;
+  margin: 0 auto;
+  background-color: green;
+}
+section#s_box01 {
+  width: 75% /* 900px */;
+  height: 550px;
+  float: left;
+  background-color: pink;
+}
+section>.par_01 {
+  width: 72.2222222% /* 650px section 900px 기준 */;
+  height: 500px;
+  float: left;
+  background-color: #666;
+}
+section>.par_02 {
+  width: 27.7777777% /* 250px section 900px 기준 */;
+  height: 500px;
+  float: right;
+  background-color: orange;
+}
+section#s_box02 {
+  width: 25% /* 300px */;
+  height: 550px;
+  float: right;
+  background-color: yellow;
+}
+
+
+
+
+
+
+
