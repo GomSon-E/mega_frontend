@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+@media screen and (min-width: 800px) {
+  article {
+    width: 800px;
+  }
+}
+
+/* @media screen and (max-width: 799px) and (min-width: 600px) {
+  
+} */
+
+@media screen and (max-width: 599px) and (min-width: 400px) {
+  section>p {
+    column-count: 2;
+    text-align: justify;
+  }
+  article>ul {
+    width: 73.33333333%;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  article {
+    width: 100% /* 800px */;
+  }
+  section>p {
+    width: 94%;
+    text-align: justify;
+    margin: 0 auto;
+    column-count: 1;
+  }
+  article>ul {
+    width: auto;
+    display: block;
+  }
+  article>ul>li {
+    width: auto;
+    text-align: center;
+  }
+}

@@ -1,10 +1,44 @@
 @charset "utf-8";
 
+body {
+  background-color: #333;
+}
 
+img {
+  max-width: 100%;
+}
 
+article {
+  width: 98% /* 800px */;
+  background-color: white;
+  margin: 0 auto;
+}
+article>h1 {
+  margin-bottom: 25px;
+}
+article>section {
+  width: 97.5% /* 780px/800 */;
+  margin: 0 auto 25px;
+}
+section>h2 {
+  margin-bottom: 25px;
+  font-size: 2em;
+}
+section>p {
+  line-height: 1.4;
+  font-size: 15px;
+  column-count: 3;
+  column-rule: 1px solid orange;
+}
 
-
-
-
+article>ul {
+  width: 75% /* 600px/800 */;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+article>ul>li {
+  width: 50%;
+}
 
 
